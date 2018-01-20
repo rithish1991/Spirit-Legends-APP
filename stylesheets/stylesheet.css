@@ -4,7 +4,6 @@
 
 
 #center_of_site {
-	height: 100vh;
 	overflow: hidden;
 	margin: 0 auto;
 	margin-top: 10px;
@@ -19,8 +18,7 @@
 
 
 body {
-	height: 100vh;
-	overflow: hidden;
+	/* height: 100vh; */
 	background-image: url("../images/Spirit Legends Website Background v2.jpg");
 	background-repeat: repeat-y;
 	background-position: top center;
