@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		blogPosts += "</div>"
 
+		console.log(blogPosts)
+
 		var blog = document.getElementById('custom_blog_div');
 		var parseHTML = new DOMParser();
 

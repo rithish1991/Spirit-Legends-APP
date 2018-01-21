@@ -45,7 +45,7 @@ body {
 #custom_blog_div {
 	float: left;
 	display: inline-block;
-	height: 800px;
+	/* height: 800px; */
 	width: 680px;
 }
 
