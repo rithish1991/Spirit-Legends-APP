@@ -14,23 +14,18 @@ document.addEventListener("DOMContentLoaded", function() {
 	.then(function(blogText) {
 
 		var blogPost = JSON.parse(blogText);
-
-		var blogPosts = "<div class=\"blog-wrapper\">";
+		var blogPosts = "";
 
 		blogPost.forEach(function(post) {
 			blogPosts += post;
 		});
 
-		blogPosts += "</div>"
-
+		var blogWrapper = document.createElement('div');
 		var blog = document.getElementById('custom_blog_div');
-		var parseHTML = new DOMParser();
 
-		//DOMParser returns parsed HTML as a document.  the DOM needs to be traversed
-		var blogHTMLParsed = parseHTML.parseFromString(blogPosts, 'text/html');
-		var blogContent = blogHTMLParsed.body.firstChild;
+		blogWrapper.innerHTML = blogPosts;
 
-		blog.append(blogContent);
+		blog.append(blogWrapper);
 	})
 	.catch(function(err) {
 		console.log(err)
