@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 	});
 
-	fetch("https://445bd017.ngrok.io/blog-content")
+	fetch("https://7963ea72.ngrok.io/blog-content")
 	.then(function(res){
 		return res.text();
 	})
@@ -29,6 +29,27 @@ document.addEventListener("DOMContentLoaded", function() {
 	})
 	.catch(function(err) {
 		console.log(err)
+	})
+
+	document.querySelector('.search-button').addEventListener('click', function() {
+		var inputFormValue = document.getElementById('search-input').value;
+
+		fetch("https://7963ea72.ngrok.io/search-blog-posts?q=" + inputFormValue)
+		.then(function(res) {
+			return res.text()
+		})
+		.then((searchQuery) => {
+			document.querySelector("#custom_blog_div").innerHTML = ""
+
+			var searchQueryHtml = JSON.parse(searchQuery);
+			var postsThatMatched = ""
+
+			searchQueryHtml.forEach(function(post) {
+				postsThatMatched += post;
+			});
+
+			document.querySelector("#custom_blog_div").innerHTML = postsThatMatched;
+		})
 	})
 
 });
