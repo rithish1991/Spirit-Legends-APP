@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 	});
 
-	fetch("https://7963ea72.ngrok.io/blog-content")
+	fetch("https://153c0633.ngrok.io/blog-content")
 	.then(function(res){
 		return res.text();
 	})
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	document.querySelector('.search-button').addEventListener('click', function() {
 		var inputFormValue = document.getElementById('search-input').value;
 
-		fetch("https://7963ea72.ngrok.io/search-blog-posts?q=" + inputFormValue)
+		fetch("https://153c0633.ngrok.io/search-blog-posts?q=" + inputFormValue)
 		.then(function(res) {
 			return res.text()
 		})
