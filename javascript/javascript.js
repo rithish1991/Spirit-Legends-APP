@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 		//Place header image into "header_and_navigation" div
 
-		var top = document.getElementById("header_and navigation");
+		var top = document.getElementById("header_and_navigation");
 		var headerImg = document.createElement("img");
 
 		var newestRelease = document.createElement("a");

@@ -13,7 +13,7 @@
 
 #center_of_site {
 	position: relative;
-	overflow: hidden;
+	overflow: scroll;
 	margin: 0 auto;
 	margin-top: 10px;
 	width: 960px;
@@ -386,8 +386,8 @@ h2 {
 
 /* Footer */
 
-#footer {
-  position: relative;
+#footer_div {
+	position: relative;
 	bottom: 0px;	
 	clear: both;
 }
