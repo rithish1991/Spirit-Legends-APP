@@ -2,6 +2,14 @@
 /* CSS Document */
 
 
+/*
+@media (max-width: 1000px) {
+		#center_of_site {
+		background-color: red;
+	}
+}
+*/
+
 
 #center_of_site {
 	position: relative;
@@ -245,6 +253,16 @@ body {
 	margin-left: -6px;
 }
 
+#support_on_patreon {
+	margin-left: -3px;
+	margin-top: 15px;
+}
+
+#listen_to_podcast {
+	margin-left: -3px;
+	margin-top: 5px;
+}
+
 #search_news {
 	margin-top: -8px;
 }
@@ -336,6 +354,24 @@ h2 {
 }
 */
 
+#header_image {
+	margin-top: 0px;
+	z-index: -1;
+	position: relative;
+}
+
+#newest_release_button {
+	margin-top: 0px;
+	float: right;
+	margin-top: -180px;
+	z-index: 0;
+	height: 157px;
+}
+
+#newest_release_button img {
+	height: 157px;
+}
+
 
 #navigation {
 	list-style-type: none;
@@ -350,7 +386,7 @@ h2 {
 
 /* Footer */
 
-.footer {
+#footer {
   position: relative;
 	bottom: 0px;	
 	clear: both;
@@ -381,22 +417,5 @@ h2 {
 	text-decoration:underline;
 	color: rgb(255, 182, 67);
 }
-
-
-/* Lightbox */
-/*
-.lightboxButton:hover{	
-	opacity:.6;	
-	}
-
-#dummy{	
-	display:none;	
-	}
-
-#lbinner{	
-	width:150px;	
-	height:170px;	
-	}
-*/
 
 
