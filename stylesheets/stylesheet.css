@@ -13,7 +13,7 @@
 
 #center_of_site {
 	position: relative;
-	overflow: scroll;
+	overflow: hidden;
 	margin: 0 auto;
 	margin-top: 10px;
 	width: 960px;
