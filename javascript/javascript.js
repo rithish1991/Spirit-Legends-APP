@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // this function runs when the DOM is ready, i.e. when the document has been parsed
 
 
-	// Side Menu height equals Custom Blog Div height
+	// Side Menu height equals Custom Blog Div height if originally smaller
 
 	if (document.getElementById('custom_blog_div')) {
 
@@ -18,6 +18,52 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		document.getElementById("side_menu").style.minHeight = (divHeight + "px");
 	}
+
+
+
+
+
+
+	// Database Main Div equals Side Menu height always
+
+	if (document.getElementById('database_main_div')) {
+
+		if (document.getElementById('database_main_div').clientHeight < document.getElementById("side_menu").clientHeight) {
+
+			var divHeight;
+			var obj = document.getElementById('side_menu');
+
+			if(obj.offsetHeight) {
+			    divHeight = obj.offsetHeight;
+
+			} else if(obj.style.pixelHeight) {
+			    divHeight = obj.style.pixelHeight;
+			}
+
+			document.getElementById("database_main_div").style.minHeight = (divHeight + "px");
+
+		} else if(document.getElementById('database_main_div').clientHeight > document.getElementById("side_menu").clientHeight) {
+
+			var divHeight;
+			var obj = document.getElementById('database_main_div');
+
+			if(obj.offsetHeight) {
+			    divHeight = obj.offsetHeight;
+
+			} else if(obj.style.pixelHeight) {
+			    divHeight = obj.style.pixelHeight;
+			}
+
+			document.getElementById("side_menu").style.minHeight = (divHeight + "px");
+
+		}
+
+	}
+
+
+
+
+
 
 
 	// Make empty links a different color
@@ -227,11 +273,25 @@ document.addEventListener("DOMContentLoaded", function() {
 		navUnorderedList.appendChild(navDatabaseButtonLink);
 
 
+/*	Not Working
+
+		window.onpageshow = 
+			function(event){
+				if (event.persisted){
+				//for every div and image you want changed back you can add a loop here to change all at once or just one div by name//
+					document.getElementById('home_button').innerHTML = '<img src="images/Button - Home v2.png" onmouseover="src=\'images/Button - Home v2 - Hover.png\';" onmouseout="src=\'images/Button - Home v2.png\'"; width="99px"; alt="Home";>';
+					document.getElementById('series_button').innerHTML = '<img src="images/Button - Series v2.png" onmouseover="src=\'images/Button - Series v2 - Hover.png\';" onmouseout="src=\'images/Button - Series v2.png\'"; width="99px"; alt="Series";>';
+			}
+		}
+*/
+
 	// Footer
 
 		//Place footer image into "footer" div
 
 		var bottom = document.getElementById("footer_div");
+		var newLine = document.createElement("br");
+		bottom.appendChild(newLine);
 		var footerImg = document.createElement("img");
 		footerImg.src = "images/Banner - Return to Top v2.jpg";
 		footerImg.setAttribute("id", "return_to_top_image");
@@ -257,6 +317,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		bottom.appendChild(bottomTextImg);
 
 
+		// "Return to Top" Button
+		
+		document.getElementById("return_to_top_image").addEventListener("click", function(){
+			document.body.scrollTop = 0; // For Safari
+	    	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		});
 
 
 
@@ -265,6 +331,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+/*
 		fetch("https://153c0633.ngrok.io/blog-content")
 		.then(function(res){
 			return res.text();
@@ -310,5 +378,6 @@ document.addEventListener("DOMContentLoaded", function() {
 				document.querySelector("#custom_blog_div").innerHTML = postsThatMatched;
 			})
 		})
+*/
 
 });

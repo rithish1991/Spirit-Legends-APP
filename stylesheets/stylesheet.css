@@ -11,6 +11,52 @@
 */
 
 
+/* No Script Message */
+
+.No_Script_Message {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: auto;
+	width: 650px;
+	text-align: center;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(190, 218, 236);
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 10px black;
+	padding: 10px 10px 10px 10px;
+}
+
+.No_Script_Message span {
+	color: rgb(0, 103, 169);
+	font-size: 18px;
+	font-family: Tahoma, sans-serif;
+}
+
+.No_Script_Message span b {
+	color: rgb(0, 103, 169);
+	font-size: 18px;
+	font-family: Tahoma, sans-serif;
+	border-bottom: solid;
+	border-width: 2px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.No_Script_Message span a {
+	text-decoration:underline;
+	color: rgb(0, 113, 163)
+	font-size: 18px;
+	font-family: Tahoma, sans-serif;
+}
+
+
+/* Center of Site */
+
 #center_of_site {
 	position: relative;
 	overflow: scroll;
@@ -59,6 +105,14 @@ body {
 	display: inline-block;
 	height: auto;
 	width: 680px;
+}
+
+#database_main_div {
+	float: left;
+	display: inline-block;
+	height: auto;
+	width: 680px;
+	position: relative;
 }
 
 .blog_post_header {
@@ -213,6 +267,21 @@ body {
 }
 
 /* Side Menu */
+
+#database_main_side_menu {
+	float: left;
+	display: inline-block;
+	background-color: rgb(190, 218, 236);
+/*	height: 798px; */
+	width: 244px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 10px black;
+	padding: 0px 10px 10px 10px;
+	margin-bottom: 10px;
+	margin-left: -1px;
+}
 
 #side_menu {
 	float: left;
@@ -417,5 +486,87 @@ h2 {
 	text-decoration:underline;
 	color: rgb(255, 182, 67);
 }
+
+
+/* Comic List */
+
+#series_list {
+	width: 620px;
+	height: auto;
+	background-color: rgb(190, 218, 236);
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 10px black;
+	bottom: 0px;
+	position: absolute;
+	margin-left: 15px;
+	padding-top: 9px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.series_list_title {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2px;
+}
+
+.series_list_table {
+	border-collapse: separate;
+	border-spacing: 2px;
+	width: 620px
+}
+
+.series_list_table_header {
+	background-color: rgb(0, 79, 138);
+	font-family: Tahoma, sans-serif;
+	font-size: 10pt;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 2px;
+}
+
+.series_list_text {
+	font-family: Tahoma, sans-serif;
+	color: rgb(0, 0, 0);
+/*	font-size: 8pt; */
+	font-size: 10pt;
+}
+
+.series_list_left_row {
+	width: 0;
+	background-color: rgb(49, 121, 175);
+	font-family: Tahoma, sans-serif;
+	font-size: 10pt;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 2px;
+}
+
+.series_list_right_row {
+	width: 100px;
+	background-color: rgb(228, 237, 241);
+	font-family: Tahoma, sans-serif;
+	font-size: 10pt;
+	color: rgb(0, 0, 0);
+	padding: 2px;
+	padding-left: 5px;
+}
+
+.series_list_right_row_text {
+	margin-top: 3px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	color: rgb(0, 113, 163);
+	text-decoration: underline;
+}
+
+
+
+
+
 
 
