@@ -20,10 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 
 
-
-
-
-
 	// Database Main Div equals Side Menu height always
 
 	if (document.getElementById('database_main_div')) {
@@ -59,11 +55,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 
 	}
-
-
-
-
-
 
 
 	// Make empty links a different color
@@ -119,6 +110,66 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	}
 
+/*
+	if (document.getElementsByClassName("database_article_contents")) {
+
+
+		var article = document.getElementById("content").querySelectorAll(".database_article_title, .database_article_subtitle, .database_article_second_title");
+		var contents = document.getElementsByClassName("database_article_contents");
+
+		for (i = 0; i < article.length; i++) {
+			if ( article[i].classList.contains("database_article_title")) {
+				var a = document.createElement("a");
+				var text = document.createTextNode(article[i].innerHTML.replace("&amp;", "&"));
+
+				var img = document.createElement("img");
+				img.src = "images/List Bullet Image and Space.png";
+				a.appendChild(img);
+				a.appendChild(text);
+				a.appendChild(document.createElement("br"));
+				a.classList.add("database_article_contents_title");
+				a.setAttribute("href", "#" + article[i].getAttribute("id") );
+				contents[0].appendChild(a);
+
+			} else if ( article[i].classList.contains("database_article_second_title")) {
+				var a = document.createElement("a");
+				var text = document.createTextNode(article[i].innerHTML.replace("&amp;", "&"));
+
+				var img = document.createElement("img");
+				img.src = "images/Sub List Bullet Image and Space.png";
+				a.appendChild(img);
+				a.appendChild(text);
+				a.classList.add("database_article_contents_second_title");
+				a.setAttribute("href", "#" + article[i].getAttribute("id") );
+				contents[0].appendChild(a);
+
+					// Show and Hide Subtitle Contents
+
+					var span = document.createElement("span");
+					var show_text = document.createTextNode("[show]")
+					span.appendChild(show_text);
+					span.classList.add("show_button")
+					a.appendChild(span);
+					a.appendChild(document.createElement("br"));
+
+			} else if ( article[i].classList.contains("database_article_subtitle")) {
+				var a = document.createElement("a");
+				var text = document.createTextNode(article[i].innerHTML.replace("&amp;", "&"));
+
+				var img = document.createElement("img");
+				img.src = "images/Sub List Bullet Image and Space.png";
+				a.appendChild(img);
+				a.appendChild(text);
+				a.appendChild(document.createElement("br"));
+				a.classList.add("database_article_contents_subtitle");
+				a.setAttribute("href", "#" + article[i].getAttribute("id") );
+				contents[0].appendChild(a);
+			}
+
+		}
+
+	}
+*/
 
 	// Automatically implement Fresco Lightbox to images
 
@@ -224,11 +275,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-		//Create Navigation Bar
+		// Create Navigation Bar
 
 		var navUnorderedList = document.createElement("ul");
 		navUnorderedList.setAttribute("id", "navigation");
 		top.appendChild(navUnorderedList);
+
+		// Home
 
 		var navHomeButton = document.createElement("li");
 		var navHomeButtonImg = document.createElement("img");
@@ -244,13 +297,15 @@ document.addEventListener("DOMContentLoaded", function() {
 		navHomeButtonLink.appendChild(navHomeButton);
 		navUnorderedList.appendChild(navHomeButtonLink);
 
+		// Series
+
 		var navSeriesButton = document.createElement("li");
 		var navSeriesButtonImg = document.createElement("img");
 		var navSeriesButtonLink = document.createElement("a");
 		navSeriesButton.setAttribute("id", "series_button");
 		navSeriesButtonImg.src = "images/Button - Series v2.png";
 		navSeriesButtonImg.setAttribute("width", "99px");
-		navSeriesButtonImg.setAttribute("alt", "Home");
+		navSeriesButtonImg.setAttribute("alt", "Series");
 		navSeriesButtonImg.setAttribute("onmouseover", "src='images/Button - Series v2 - Hover.png'");
 		navSeriesButtonImg.setAttribute("onmouseout", "src='images/Button - Series v2.png'");
 		navSeriesButtonLink.setAttribute("href", "series.html");
@@ -258,13 +313,15 @@ document.addEventListener("DOMContentLoaded", function() {
 		navSeriesButtonLink.appendChild(navSeriesButton);
 		navUnorderedList.appendChild(navSeriesButtonLink);
 
+		// Database
+
 		var navDatabaseButton = document.createElement("li");
 		var navDatabaseButtonImg = document.createElement("img");
 		var navDatabaseButtonLink = document.createElement("a");
 		navDatabaseButton.setAttribute("id", "series_button");
 		navDatabaseButtonImg.src = "images/Button - Database v2.png";
 		navDatabaseButtonImg.setAttribute("width", "99px");
-		navDatabaseButtonImg.setAttribute("alt", "Home");
+		navDatabaseButtonImg.setAttribute("alt", "Database");
 		navDatabaseButtonImg.setAttribute("onmouseover", "src='images/Button - Database v2 - Hover.png'");
 		navDatabaseButtonImg.setAttribute("onmouseout", "src='images/Button - Database v2.png'");
 		navDatabaseButtonLink.setAttribute("href", "database.html");

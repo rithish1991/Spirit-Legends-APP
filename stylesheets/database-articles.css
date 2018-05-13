@@ -58,12 +58,32 @@
 	
 }
 
-.database_article_contents_subtitle {
+.database_article_contents_second_title {
 	font-family: Tahoma, sans-serif;
 	font-size: 11pt;
 	color: rgb(0, 103, 169);
 	display: inline;
 	margin-left: 20px;
+}
+
+.show_button {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+.database_article_contents_subtitle {
+	font-family: Tahoma, sans-serif;
+	font-size: 11pt;
+	color: rgb(0, 103, 169);
+	display: inline;
+	margin-left: 40px;
+/*
+	For Multiple Subtitle Testing:
+	font-size: 10pt;
+	font-style: italic;
+*/
 }
 
 /* Articles */
@@ -132,6 +152,33 @@
 	margin-right: 3px;
 }
 
+.database_article_second_title {
+	font-family: Tahoma, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: rgb(0, 103, 169);
+	display: inline-block;
+	margin: 0px 26px 5px 13px;
+	
+	background-image: url("../images/List Bullet Image.png");
+  background-repeat: no-repeat;
+  padding-left: 15px;  /* width of the image plus a little extra padding */
+	background-position: center left;
+}
+
+.second_title_underline {
+	height: 1px;
+	color: rgb(0, 103, 169);
+	background-color: rgb(0, 103, 169);
+	border-width: 0px;
+	border-style: none;
+	padding: 0px;
+	border-color: white;
+	margin-left: 13px;
+	width: 300px;
+	margin-top: 0px;
+}
+
 .database_article_subtitle {
 	font-family: Tahoma, sans-serif;
 	font-size: 12pt;
@@ -140,6 +187,10 @@
 	display:inline;
 	margin: 0px 26px 40px 13px;
 	font-style: italic;
+/*
+	For Multiple Subtitle Testing:
+	font-size: 11pt;
+*/
 }
 
 .database_article_title_underline_under {
