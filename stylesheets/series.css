@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Contents Section */
+
+#series_main_comic {
+	display: inline-block;
+/*	margin: 14px 0px 26px 60px; */
+	margin: 14px 0px 51px 60px;
+	background-color: rgb(190, 218, 236);
+	vertical-align: top;
+	float: left;
+	border-width: 1px;
+	border-style: solid;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 17px;
+	padding-bottom: 2px;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 5px black;
+	height: auto;
+	width: 747px;
+}
+
+.series_main_comic_issue {
+	width: 115px;
+	height: auto;
+/*	background-color: red; */
+	display: inline-block;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.series_main_comic_issue p {
+	color: rgb(0, 0, 0);
+	text-align: left;
+	font-size: 8pt;
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	width: 117px;
+}
+
+.series_main_comic_issue p2 {
+	color: rgb(0, 0, 0);
+	text-align: left;
+	font-size: 8pt;
+	font-family: Tahoma, sans-serif;
+	vertical-align: top;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	width: 117px;
+	display: inline-block;
+}
+
+
+/* Issue #1
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAEElEQVR42mL4//8/A0CAAQAI/AL+26JNFgAAAABJRU5ErkJggg==" style="height:3px;"><br>
+<a href="https://archive.is/o/bW65N/www.megamanmonthly.com/issues-001.php" style="text-decoration:underline;color:rgb(0, 113, 163);"><img src="https://archive.is/bW65N/bdc80d2975842807d8082835daa31615a3e672da.png" style="border-width: 0px; "></a><br>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAEElEQVR42mL4//8/A0CAAQAI/AL+26JNFgAAAABJRU5ErkJggg==" style="height:3px;"><br>
+<b>Sketch Variant</b><br>
+Chad Thomas</center></td>
+*/
+
+
+
+.series_main_comic_issue img {
+/*	max-width: 100%;
+	max-height: 100%; */
+	width: 113px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0067a9;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+
+.series_main_comic_underline {
+	height: 1px;
+	color: rgb(0, 103, 169);
+	background-color: rgb(0, 103, 169);
+	border-width: 0px;
+	border-style: none;
+	padding: 0px;
+	border-color: white;
+	margin-left: -3px;
+	margin-right: -3px;
+	margin-top: 3px;
+	margin-bottom: 12px;
+}
+
+.series_underline {
+	height: 1px;
+	color: rgb(0, 103, 169);
+	background-color: rgb(0, 103, 169);
+	border-width: 0px;
+	border-style: none;
+	padding: 0px;
+	border-color: white;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+
+/* Spirit Shorts */
+
+#left_header_spirit_shorts {
+	width: 390px;
+	float: left;
+	margin-left: 60px;
+}
+
+#series_spirit_shorts {
+	display: inline-block;
+	margin: 14px 0px 13px 60px;
+	background-color: rgb(190, 218, 236);
+	vertical-align: top;
+	float: left;
+	border-width: 1px;
+	border-style: solid;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 17px;
+	padding-bottom: 2px;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 5px black;
+	height: auto;
+	width: 298px;
+}
+
+.series_spirit_shorts_strip {
+/*	width: 141px; */
+	width: 140px;
+	height: auto;
+	display: inline-block;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.series_spirit_shorts_strip p {
+	color: rgb(0, 0, 0);
+	text-align: left;
+	font-size: 8pt;
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	width: 142px;
+}
+
+.series_spirit_shorts_strip p2 {
+	color: rgb(0, 0, 0);
+	text-align: left;
+	font-size: 8pt;
+	font-family: Tahoma, sans-serif;
+	vertical-align: top;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	width: 142px;
+	display: inline-block;
+}
+
+.series_spirit_shorts_strip img {
+/*	max-width: 100%;
+	max-height: 100%; */
+	width: 138px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0067a9;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+
+.series_spirit_shorts_underline {
+	height: 1px;
+	color: rgb(0, 103, 169);
+	background-color: rgb(0, 103, 169);
+	border-width: 0px;
+	border-style: none;
+	padding: 0px;
+	border-color: white;
+	margin-left: -3px;
+	margin-right: -3px;
+	margin-top: 3px;
+	margin-bottom: 12px;
+}
+
+
+/* Andrew's Abridged Adventures */
+
+#right_header_andrew_abridged {
+	width: 390px;
+  float: right;
+	margin-right: 60px;
+}
+
+#series_andrew_abridged {
+	display: inline-block;
+	margin: 14px 60px 13px 0px;
+	background-color: rgb(190, 218, 236);
+	vertical-align: top;
+	float: right;
+	border-width: 1px;
+	border-style: solid;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 17px;
+/*	padding-bottom: 1px; */
+	padding-bottom: 43px;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 5px black;
+	height: auto;
+	width: 298px;
+}
+
+.series_andrew_abridged_strip {
+/*	width: 141px; */
+	width: 140px;
+	height: auto;
+/*  background-color: red; */
+	display: inline-block;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.series_andrew_abridged_strip p {
+	color: rgb(0, 0, 0);
+	text-align: left;
+	font-size: 8pt;
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+/*  width: 143px; */
+	width: 142px;
+}
+
+.series_andrew_abridged_strip p2 {
+	color: rgb(0, 0, 0);
+	text-align: left;
+	font-size: 8pt;
+	font-family: Tahoma, sans-serif;
+	vertical-align: top;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+/*  width: 143px; */
+	width: 142px;
+	display: inline-block;
+}
+
+.series_andrew_abridged_strip img {
+/*	max-width: 100%;
+	max-height: 100%; */
+/*  width: 139px; */
+	width: 138px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0067a9;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+
+.series_andrew_abridged_strip_underline {
+	height: 1px;
+	color: rgb(0, 103, 169);
+	background-color: rgb(0, 103, 169);
+	border-width: 0px;
+	border-style: none;
+	padding: 0px;
+	border-color: white;
+	margin-left: -3px;
+	margin-right: -3px;
+	margin-top: 35px;
+/* margin-top: 7px */
+	margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
