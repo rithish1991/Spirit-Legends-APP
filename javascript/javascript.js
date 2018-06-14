@@ -384,13 +384,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+	// Blog
 
-
-
-
-
-/*
-		fetch("https://153c0633.ngrok.io/blog-content")
+		fetch("https://spiritlegendsblog.herokuapp.com/blog-content")
 		.then(function(res){
 			return res.text();
 		})
@@ -400,8 +396,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			var blogPosts = "";
 
 			blogPost.forEach(function(post) {
-				blogPosts += post;
-			});
+				blogPosts += post
+			})
 
 			var blogWrapper = document.createElement('div');
 			var blog = document.getElementById('custom_blog_div');
@@ -413,7 +409,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		.catch(function(err) {
 			console.log(err)
 		})
-
+/*
 		document.querySelector('.search-button').addEventListener('click', function() {
 			var inputFormValue = document.getElementById('search-input').value;
 
@@ -436,5 +432,4 @@ document.addEventListener("DOMContentLoaded", function() {
 			})
 		})
 */
-
 });
