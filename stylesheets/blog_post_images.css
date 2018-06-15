@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Left Image */
+
+.Left_Image {
+	float: left;
+	display: inline-block;
+	margin-right: 18px;
+	background-color: rgb(190, 218, 236);
+/*	width: 100px; */
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 5px black;
+	margin-bottom: 5px;
+	padding: 2px 2px 2px 2px;
+
+/* WITH INNER BORDER	
+	float: left;
+	display: inline-block;
+	margin-right: 18px;
+	background-color: rgb(190, 218, 236);
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 5px black;
+	margin-bottom: 5px;
+	padding: 3px 3px 3px 3px;
+	outline: 1px solid rgb(0, 103, 169);
+	outline-offset: -4px;
+*/
+
+}
+
+
+/* Left Image without a Drop Shadow */
+
+.Left_Image_No_Shadow {
+	float: left;
+	display: inline-block;
+	margin-right: 18px;
+	background-color: rgb(190, 218, 236);
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 103, 169);
+	padding: 2px 2px 2px 2px;
+}
+
+
+/* Right Image */
+
+.Right_Image {
+	float: right;
+	display: inline-block;
+	margin-left: 18px;
+	background-color: rgb(190, 218, 236);
+/*	width: 100px; */
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 5px black;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 2px 2px 2px 2px;
+}
+
+
+/* Right Image without a Drop Shadow */
+
+.Right_Image_No_Shadow {
+	float: right;
+	display: inline-block;
+	margin-left: 18px;
+	background-color: rgb(190, 218, 236);
+/*	width: 100px; */
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 103, 169);
+	padding: 2px 2px 2px 2px;
+}
+
+
+
+
+
+
+
