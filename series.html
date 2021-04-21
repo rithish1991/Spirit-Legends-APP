@@ -3,9 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
         <title>Welcome to the Official Spirit Legends Website!</title>
+<!--        <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap/bootstrap.min.css">
+--> 
         <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/series.css">
-
+<!--       <script src="javascript/jquery-3.3.1.min.js"></script>
+        <script src="javascript/bootstrap/bootstrap.min.js"></script>
+--> 
         <link rel="stylesheet" type="text/css" href="stylesheets/fresco/fresco.css"/>
 <!--
         <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
@@ -44,11 +48,11 @@
 
         <!-- Centered Header -->
 
-            <div style="width: 300px; margin: 0 auto;">
+            <div style="width: 700px; margin: 0 auto;">
                 <center>
                     <h2 class="title">Spirit Legends</h2>
                     <br>
-                    This is the main comic series, Spirit Legends! Select an issue to begin reading it!
+                    This is the main comic series, Spirit Legends! Select an issue to begin reading it, or click on an issue title to view the database article on the issue! From there, you can download the issue for free or buy a print!
                 </center>
             </div>
 
@@ -67,7 +71,7 @@
                         <img src="./series images/main series/spirit legends issue 1/Spirit Legends 1 - Cover.jpg" alt="Spirit Legends 1 - Cover" />
                     </a>
                     <p>Legend 1:</p>
-                    <p2>Destiny Calls</p2>
+                    <a href="database-spirit-legends-issue-1.html"><p2 style="color: purple; text-decoration: underline;">Destiny Calls</p2></a>
                 </div>
 
                 <!-- Spirit Legends - Issue 2 -->
@@ -80,7 +84,7 @@
                         <img src="./series images/main series/spirit legends issue 2/Spirit Legends 2 - Cover.jpg" alt="Spirit Legends 2 - Cover" />
                     </a>
                     <p>Legend 2:</p>
-                    <p2>The Lady in the Lightning</p2>
+                    <a href="database-spirit-legends-issue-2.html"><p2 style="color: purple; text-decoration: underline;">The Lady in the Lightning</p2></a>
                 </div>
 
                 <!-- Spirit Legends - Issue 3 -->
@@ -93,7 +97,7 @@
                         <img src="./series images/main series/spirit legends issue 3/Spirit Legends 3 - Cover.jpg" alt="Spirit Legends 3 - Cover" />
                     </a>
                     <p>Legend 3:</p>
-                    <p2>The Dark Spirit of the Talisman</p2>
+                    <a href="database-spirit-legends-issue-3.html"><p2 style="color: purple; text-decoration: underline;">The Dark Spirit of the Talisman</p2></a>
                 </div>
 
                 <!-- Spirit Legends - Issue 4 -->
@@ -106,7 +110,7 @@
                         <img src="./series images/main series/spirit legends issue 4/Spirit Legends 4 - Cover.jpg" alt="Spirit Legends 4 - Cover" />
                     </a>
                     <p>Legend 4:</p>
-                    <p2>A Test of Strength</p2>
+                    <a href="database-spirit-legends-issue-4.html"><p2 style="color: purple; text-decoration: underline;">A Test of Strength</p2></a>
                 </div>
 
                 <!-- Spirit Legends - Issue 5 -->
@@ -172,7 +176,7 @@
                 <center>
                     <h2 class="title">Spirit Shorts</h2>
                     <br>
-                    This is the non-canon parody spin-off comic series, Spirit Shorts! Select a strip to read it!
+                    This is the non-canon parody spin-off comic series, Spirit Shorts! Select a strip to read it, or click on the title to view the database article on the strip!
                 </center>
             </div>
 
@@ -199,38 +203,51 @@
 
                     <div class="series_spirit_shorts_strip">
                         <p>Strip #1</p>
-                        <a href="./series images/spirit shorts/Spirit Shorts 1.jpg" class="fresco">
+                        <a href="./series images/spirit shorts/Spirit Shorts 1.jpg"
+                           class="fresco"
+                           data-fresco-group="spirit_shorts"
+                           data-fresco-caption="Spirit Shorts - Short 1: Seating Enragement">
                             <img src="./series images/spirit shorts/Spirit Shorts 1.jpg" alt="Spirit Shorts - Short 1" />
                         </a>
                         <p>Short 1:</p>
-                        <p2>Seating Enragement</p2>                 
+                        <a href="database-spirit-shorts-1.html"><p2 style="color: purple; text-decoration: underline;">Seating Enragement</p2></a>                
                     </div>
 
                     <div class="series_spirit_shorts_strip">
                         <p>Strip #2</p>
-                        <a href="./series images/spirit shorts/Spirit Shorts 2.jpg" class="fresco">
+                        <a href="./series images/spirit shorts/Spirit Shorts 2.jpg"
+                           class="fresco"
+                           data-fresco-group="spirit_shorts"
+                           data-fresco-caption="Spirit Shorts - Short 2: The Final Straw">
                             <img src="./series images/spirit shorts/Spirit Shorts 2.jpg" alt="Spirit Shorts - Short 2" />
                         </a>
                         <p>Short 2:</p>
-                        <p2>The Final Straw</p2>                 
+                        <a href="database-spirit-shorts-2.html"><p2 style="color: purple; text-decoration: underline;">The Final Straw</p2></a>                
                     </div>
 
                     <div class="series_spirit_shorts_strip">
                         <p>Strip #3</p>
-                        <a href="./series images/spirit shorts/Spirit Shorts 3.jpg" class="fresco">
+                        <a href="./series images/spirit shorts/Spirit Shorts 3.jpg"
+                           class="fresco"
+                           data-fresco-group="spirit_shorts"
+                           data-fresco-caption="Spirit Shorts - Short 3: An Unexpectable Test Specticle">
                             <img src="./series images/spirit shorts/Spirit Shorts 3.jpg" alt="Spirit Shorts - Short 3" />
                         </a>
                         <p>Short 3:</p>
-                        <p2>An Unexpectable Test Specticle</p2>                 
+                        <a href="database-spirit-shorts-3.html"><p2 style="color: purple; text-decoration: underline;">An Unexpectable Test Specticle</p2></a>             
                     </div>
 
                     <div class="series_spirit_shorts_strip">
                         <p>Strip #4</p>
-                        <a href="./series images/spirit shorts/Spirit Shorts 4.jpg" class="fresco">
+                        <a href="./series images/spirit shorts/Spirit Shorts 4.jpg"
+                           class="fresco"
+                           data-fresco-group="spirit_shorts"
+                           data-fresco-caption="Spirit Shorts - Short 4: A Claw's for Concern">
                             <img src="./series images/spirit shorts/Spirit Shorts 4.jpg" alt="Spirit Shorts - Short 4" />
                         </a>
                         <p>Short 4:</p>
-                        <p2>A Claw's for Concern</p2>                 
+                        <a href="database-spirit-shorts-4.html"><p2 style="color: purple; text-decoration: underline;">A Claw's for Concern</p2></a>
+<!--                    <p2>A Claw's for Concern</p2>                 -->
                     </div>
 
 <!--    
@@ -248,7 +265,7 @@
                 <center>
                     <h2 class="title">Andrew's Abridged Adventures</h2>
                     <br>
-                    This is the non-canon spin-off comic series, Andrew's Abridged Adventures! Select a strip to read it!
+                    This is the non-canon spin-off comic series, Andrew's Abridged Adventures! Select a strip to read it, or click on the title to view the database article on the strip!
                 </center>
             </div>
 
@@ -261,38 +278,53 @@
 
                     <div class="series_andrew_abridged_strip">
                         <p>Strip #1</p>
-                        <a href="./series images/andrew abridged/Andrew Abridged 1.jpg" alt="Andrew's Abridged Adventures - Adventure 1" class="fresco">
+                        <a href="./series images/andrew abridged/Andrew Abridged 1.jpg"
+                           class="fresco"
+                           data-fresco-group="andrew_abridged"
+                           data-fresco-caption="Andrew's Abridged Adventures - Adventure 1: It Figures">
                             <img src="./series images/andrew abridged/Andrew Abridged 1.jpg" alt="Andrew's Abridged Adventures - Adventure 1" />
                         </a>
                         <p>Adventure 1:</p>
-                        <p2>It Figures</p2>                 
+                        <a href="database-andrews-abridged-adventures-1.html"><p2 style="color: purple; text-decoration: underline;">It Figures</p2></a> 
                     </div>
 
                     <div class="series_andrew_abridged_strip">
                         <p>Strip #2</p>
-                        <a href="./series images/andrew abridged/Andrew Abridged 2.jpg" alt="Andrew's Abridged Adventures - Adventure 2" class="fresco">
+                        <a href="./series images/andrew abridged/Andrew Abridged 2.jpg"
+                           class="fresco"
+                           data-fresco-group="andrew_abridged"
+                           data-fresco-caption="Andrew's Abridged Adventures - Adventure 2: Bedtime Battlecry">
                             <img src="./series images/andrew abridged/Andrew Abridged 2.jpg" alt="Andrew's Abridged Adventures - Adventure 2" />
                         </a>
                         <p>Adventure 2:</p>
-                        <p2>Bedtime Battlecry</p2>                 
+                        <a href="database-andrews-abridged-adventures-2.html"><p2 style="color: purple; text-decoration: underline;">Bedtime Battlecry</p2></a>                 
                     </div>
 
                     <div class="series_andrew_abridged_strip">
                         <p>Strip #3</p>
-                        <a href="./series images/andrew abridged/Andrew Abridged 3.jpg" alt="Andrew's Abridged Adventures - Adventure 3" class="fresco">
+                        <a href="./series images/andrew abridged/Andrew Abridged 3.jpg"
+                           class="fresco"
+                           data-fresco-group="andrew_abridged"
+                           data-fresco-caption="Andrew's Abridged Adventures - Adventure 3: Plenty of Fish">
                             <img src="./series images/andrew abridged/Andrew Abridged 3.jpg" alt="Andrew's Abridged Adventures - Adventure 3" />
                         </a>
                         <p>Adventure 3:</p>
-                        <p2>Plenty of Fish</p2>                 
+                        <a href="database-andrews-abridged-adventures-3.html"><p2 style="color: purple; text-decoration: underline;">Plenty of Fish</p2></a>                 
                     </div>
 
                     <div class="series_andrew_abridged_strip">
                         <p>Strip #4</p>
-                        <a href="./series images/andrew abridged/Andrew Abridged 4.jpg" alt="Andrew's Abridged Adventures - Adventure 4" class="fresco">
+                        <a href="./series images/andrew abridged/Andrew Abridged 4.jpg"
+                           class="fresco"
+                           data-fresco-group="andrew_abridged"
+                           data-fresco-caption="Andrew's Abridged Adventures - Adventure 4: What Goes Around...">
                             <img src="./series images/andrew abridged/Andrew Abridged 4.jpg" alt="Andrew's Abridged Adventures - Adventure 4" />
                         </a>
                         <p>Adventure 4:</p>
-                        <p2>What Goes Around...</p2>                 
+<!--
+                        <p2>What Goes Around...</p2>
+-->
+                        <a href="database-andrews-abridged-adventures-4.html"><p2 style="color: purple; text-decoration: underline;">What Goes Around...</p2></a>                 
                     </div>
 
 <!--                    <hr class="series_main_comic_underline">
@@ -320,6 +352,20 @@
         <script src="javascript/javascript.js"></script>
         <script src="javascript/series.js"></script>
         <script src="javascript/fresco/fresco.js" type="text/javascript"></script>
+
+    <!-- Links in Body -->
+
+    <!--        <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap/bootstrap.min.css">
+--> 
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/series.css">
+<!--       <script src="javascript/jquery-3.3.1.min.js"></script>
+        <script src="javascript/bootstrap/bootstrap.min.js"></script>
+--> 
+        <link rel="stylesheet" type="text/css" href="stylesheets/fresco/fresco.css"/>
+<!--
+        <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+-->    
 
     </body>
 </html>

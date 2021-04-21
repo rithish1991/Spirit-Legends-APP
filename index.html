@@ -5,14 +5,13 @@
         <title>Welcome to the Official Spirit Legends Website!</title>
         <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/blog_post_images.css">
-<!--
-        <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
--->    
+        <script src="javascript/jquery-3.3.1.min.js"></script>
+
+  
 
     </head>
     
-	<body>
-        
+	<body style="margin: 0px 0px;">    
 
     <!-- Banner -->
 
@@ -67,7 +66,7 @@
     <!-- Content -->
 
 
-        <div id="content">
+        <div id="content" class="blog_and_side_menu_content" >
 
         <!--  From WordPress -->
     <!--
@@ -78,9 +77,23 @@
                     </div>
     -->
 
+
+
+               
+
         <!-- Custom Blog -->
 
                 <div id= "custom_blog_div">
+
+                            <!-- Click to Return Message that appears after selecting a recent blog post -->
+                    <div id="last_notes_message" style="display:none;" class="" >
+                        <span id="returnLink" return="' + document.referrer + '"><img src="images/Blog Return Link Image v6.png" alt="Click to return" onmouseover="this.src=&quot;images/Blog Return Link Image - Hover v6.png&quot;;" onmouseout="this.src=&quot;images/Blog Return Link Image v6.png&quot;;"/></span>
+    <!--                    
+                        <script>
+                            document.write('<span style="cursor: pointer; text-decoration: underline;" id="returnLink" return="' + document.referrer + '">Click here to return.</span>');
+                        </script>
+    -->
+                    </div>
 <!--          
                     <h2 class= "blog_post_header">Welcome, and Pardon the Construction!</h2>
 
@@ -88,6 +101,42 @@
 
                     <p class= "blog_post_text">Hi, and welcome to the official Spirit Legends website! The site is live in order to test out certain things, but as you can see, it is very much incomplete. Please look forward to the complete site in the future!</p>
 -->
+                </div>
+
+        <!-- Blog Post Older/Newer Navigation -->
+                <div id="post_navigation">
+                    <h3>Post navigation</h3>
+                    <div>
+                        <a id="arrowLeft" href="javascript:;" onclick="paginationLeft(); return true;" >
+                            <span>←</span>Older posts
+                        </a>
+                        <div id="pageNumberFirst" style="display:inline;"></div>
+                        <div id="leftdots"><span>...</span></div>
+                        <div id="pageNumber1" style="display:inline;"></div>
+                        <div id="pageNumber2" style="display:inline;"></div> 
+                        <div id="pageNumber3" style="display:inline;"></div>
+                        <div id="pageNumber4" style="display:inline;"></div>
+                        <div id="pageNumber" style="display:inline; color: rgb(12, 119, 167); font-weight: bold; "></div>
+                        <div id="pageNumber5" style="display:inline;"></div>
+                        <div id="pageNumber6" style="display:inline;"></div> 
+                        <div id="pageNumber7" style="display:inline;"></div>
+                        <div id="pageNumber8" style="display:inline;"></div>
+                        <div id="rightdots"><span>...</span></div>
+                        <div id="pageNumberLast" style="display:inline;"></div>
+
+                        <button id="jump_to_page_button" onclick="jumpToPage();"><span>↳</span></button>
+
+
+                        <div id="search_pages">
+                            <span>Jump to page:</span>
+                            <input id="search_pages_button_text" type="number" placeholder="" style="width:30px;">
+                            <button id="search_pages_button" onclick="goToPage()">Go</button> <!--type="button" -->
+                        </div>
+
+                        <a id="arrowRight" href="javascript:;" onclick="paginationRight(); return true;" style="float:right;">
+                            Newer posts<span>→</span>
+                        </a>
+                    </div>
                 </div>
 
     <!--  From WordPress -->
@@ -103,25 +152,38 @@
 
                 <div id= "side_menu">
                     <h2 class = "side_menu_titles">Spirit Legends on the Web</h2>
-                        <a href="http://www.indyplanet.us/brands/andrew-decrescenzo/">
-                            <img id= "shop_with_indyplanet" src= "images/Shop Image 1 v3.png" onmouseover= "src='images/Shop Image 1 v3 - Hover.png'" onmouseout= "src='images/Shop Image 1 v3.png'"/>
+
+<!-- No longer works:                       <a href="http://www.indyplanet.us/brands/andrew-decrescenzo/">
+-->
+                        <a href="https://tapas.io/series/SpiritLegends" target="_blank">
+                            <img id= "series_on_tapas" src= "images/Tapas Image 1.png" onmouseover= "src='images/Tapas Image 1 - Hover.png'" onmouseout= "src='images/Tapas Image 1.png'"/>
                         </a>
 
-                        <a href="https://www.patreon.com/drewmaru">
-                            <img id= "support_on_patreon" src= "images/Patreon Image 1 v8.png" onmouseover= "src='images/Patreon Image 1 v8 - Hover.png'" onmouseout= "src='images/Patreon Image 1 v8.png'"/>
+                        <a href="http://www.indyplanet.us/?s=Andrew+DeCrescenzo+Spirit+Legends" target="_blank">
+                            <img id= "shop_with_indyplanet" src= "images/Shop Image 2.png" onmouseover= "src='images/Shop Image 2 - Hover.png'" onmouseout= "src='images/Shop Image 2.png'"/>
                         </a>
 
-                        <a href="https://www.youtube.com/playlist?list=PLn4NfsYzRWhqhmWTe-D9SYoUA-KyGeA1S">
+                        <a href="https://www.youtube.com/playlist?list=PLn4NfsYzRWhqhmWTe-D9SYoUA-KyGeA1S" target="_blank">
                             <img id= "listen_to_podcast" src= "images/YouTube Image 1 v2.png" onmouseover= "src='images/YouTube Image 1 v2 - Hover.png'" onmouseout= "src='images/YouTube Image 1 v2.png'"/>
+                        </a>
+
+                        <a href="https://www.patreon.com/drewmaru" target="_blank">
+                            <img id= "support_on_patreon" src= "images/Patreon Image 1 v8.png" onmouseover= "src='images/Patreon Image 1 v8 - Hover.png'" onmouseout= "src='images/Patreon Image 1 v8.png'"/>
                         </a>
 
                     <h2 class = "side_menu_titles">Search News</h2>
                             <div id="search_news">
-                                <input type="text" placeholder="">
-                                <button type="button">Search</button> 
+<!--
+                                <input id="search_news_button_text" type="text" placeholder="" oninput="searchButton(this)">
+-->
+                                <input id="search_news_button_text" type="text" placeholder="">
+                                <button id="search_news_button" onclick="searchText(this)">Search</button> <!--type="button" -->
                             </div>
 
                     <h2 class = "side_menu_titles">Latest News</h2>
+                        <div id="latest_news_container">
+                            <ul id="latest_news" class="bullet"></ul>
+                        </div>
 
                 </div>
 
@@ -158,8 +220,20 @@
 
     
         <script src="javascript/javascript.js"></script>
-        <script src="javascript/blog_dimensions.js"></script>
+        <script src="javascript/blogs 1-25.js"></script>
+        <script src="javascript/blogs 26-50.js"></script>
+        <script src="javascript/blogs 51-75.js"></script>
+        <script src="javascript/blogs 76-100.js"></script>
+        <script src="javascript/blogs 101-125.js"></script>
+        <script src="javascript/blogs 126-150.js"></script>
+        <script src="javascript/jquery-3.3.1.min.js"></script>
+        <script src="javascript/blog.js"></script>
 
+        <!-- Links in Body -->
 
+                <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/blog_post_images.css">
+        <script src="javascript/jquery-3.3.1.min.js"></script>
+        
     </body>
 </html>

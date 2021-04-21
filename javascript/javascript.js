@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 	// Side Menu height equals Custom Blog Div height if originally smaller
-
+/*
 	if (document.getElementById('custom_blog_div')) {
 
 		var divHeight;
@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		document.getElementById("side_menu").style.minHeight = (divHeight + "px");
 	}
-
-
+*/
+/*
 	// Database Main Div equals Side Menu height always
 
 	if (document.getElementById('database_main_div')) {
@@ -55,20 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 
 	}
-
-
-	// Make empty links a different color
-
-	if (document.querySelectorAll('a[href="#"]')) {
-
-		var emptyLinksArray = document.querySelectorAll('a[href="#"]');
-
-		for (i = 0; i < emptyLinksArray.length; i++) {
-    		emptyLinksArray[i].style.color = "red";
-		} 
-
-	}
-
+*/
 
 	// Database Articles - Contents div
 
@@ -267,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		newestReleaseImg.src = "images/Newest Release 1 v4.png"
 		newestRelease.setAttribute("id", "newest_release_button");
-		newestRelease.setAttribute("href", "#");
+		newestRelease.setAttribute("href", "database-spirit-legends-issue-4.html");
 		newestRelease.appendChild(newestReleaseImg);
 		top.appendChild(newestRelease);
 
@@ -342,6 +329,14 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 */
 
+
+
+
+
+
+
+
+
 	// Footer
 
 		//Place footer image into "footer" div
@@ -365,7 +360,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		var bottomLinkSteven = document.createElement("a");
 
 		bottomText.setAttribute("class", "footer_text");
-		bottomText.innerHTML = 'Spirit Legends is copyright&copy; of <a href="http://andrewartwork.com" class= "footer_link">Andrew DeCrescenzo</a>. Website design is based on the now defunct website, Mega Man Monthly, which was designed by <a href="https://twitter.com/stevenchase87" class= "footer_link">Steven Chase</a>. All rights reserved.'
+		bottomText.innerHTML = 'Spirit Legends is copyright&copy; of <a href="http://andrewartwork.com" target="_blank" class= "footer_link">Andrew DeCrescenzo</a>. Website design is based on the now defunct website, Mega Man Monthly, which was designed by <a href="https://twitter.com/stevenchase87" target="_blank" class= "footer_link">Steven Chase</a>. All rights reserved.'
 
 		bottomTextImg.src = "images/Footer Image.jpg";
 		bottomTextImg.setAttribute("class", "footer_image");
@@ -383,6 +378,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
+
+
+/*
 
 	// Blog
 
@@ -409,6 +410,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		.catch(function(err) {
 			console.log(err)
 		})
+*/
+
+
+
+
 /*
 		document.querySelector('.search-button').addEventListener('click', function() {
 			var inputFormValue = document.getElementById('search-input').value;
@@ -432,4 +438,22 @@ document.addEventListener("DOMContentLoaded", function() {
 			})
 		})
 */
+
+
+
+
+	// Make empty links a different color
+
+	if (document.querySelectorAll('a[href="#"]')) {
+
+		var emptyLinksArray = document.querySelectorAll('a[href="#"]');
+
+		for (i = 0; i < emptyLinksArray.length; i++) {
+    		emptyLinksArray[i].style.color = "red";
+		} 
+
+	}
+
+
+
 });

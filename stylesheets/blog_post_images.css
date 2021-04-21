@@ -4,7 +4,7 @@
 
 /* Left Image */
 
-.Left_Image {
+.Left_Image img {
 	float: left;
 	display: inline-block;
 	margin-right: 18px;
@@ -51,7 +51,7 @@
 
 /* Right Image */
 
-.Right_Image {
+.Right_Image img {
 	float: right;
 	display: inline-block;
 	margin-left: 18px;
@@ -82,8 +82,56 @@
 }
 
 
+/* Blog Images with Text - The are <div> outside of the blog <p>, unlike the <img> without text inside the blog <p> */
 
+.Left_Image_With_Text {
+	float: left;
+	display: inline-block;
+	margin-right: 18px;
+	background-color: rgb(190, 218, 236);
+/*	width: 100px; */
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 5px black;
+	margin-bottom: 5px;
+	padding: 2px 2px 2px 2px;
+}
 
+.Right_Image_With_Text {
+	float: right;
+	display: inline-block;
+  margin-right: 5px;
+	margin-left: 18px;
+	background-color: rgb(190, 218, 236);
+/*	width: 100px; */
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 103, 169);
+	box-shadow: 5px 5px black;
+	margin-bottom: 5px;
+	padding: 2px 2px 2px 2px;
+}
 
+.Blog_Image_Text {
+/*	text-align: center; */
+	color: black;
+	font-family: Tahoma, sans-serif;
+	font-size: 10pt;
+	margin-top: -1px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
 
-
+.Blog_Text_Span_In_P {
+}
+/*
+.New_Paragraph {
+	height: 33px;
+	background-color: green;
+	margin: auto;
+	position: relative;
+	width:10px;
+}
+*/

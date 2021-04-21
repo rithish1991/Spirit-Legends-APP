@@ -2,6 +2,30 @@
 /* CSS Document */
 
 
+
+/* Previous/Next Issue */
+
+#issue_navigation {
+	margin-bottom: 30px;
+	width: 680px;
+	color: rgb(0, 113, 163);
+}
+
+#issue_navigation a, a:visited {
+	color: rgb(0, 113, 163);
+}
+
+#previousIssue_leftArrow {
+	text-decoration: underline;
+	margin: 0px 0px 0px 13px;
+}
+
+#nextIssue_rightArrow {
+	float: right;
+	text-decoration: underline;
+}
+
+
 /* Contents Section */
 
 .database_article_contents {
@@ -114,6 +138,14 @@
 	box-shadow: 7px 10px black;
 	outline: white solid 2px;
 	width: 624px;
+}
+
+.database_article_subname {
+	font-family: Tahoma, sans-serif;
+	font-size: 11pt;
+	font-style: oblique;
+	color: rgb(0, 0, 0);
+	display:inline;
 }
 
 .database_article_title {
@@ -415,3 +447,47 @@
 }
 
 
+/* Database Comic Issues */
+
+.database_article_issue_box {
+	margin: 0px 23px 0px 15px;
+/*	background-color: rgb(255, 183, 65); -- Old Color */
+	background-color: rgb(255, 182, 67); /* Navigation Colors */
+	text-align: center;
+	vertical-align: top;
+	border-width: 2px;
+	border-style: solid;
+	padding: 7px;
+	border-color: rgb(0, 0, 0);
+	box-shadow: 7px 10px black;
+	outline: white solid 2px;
+	width: 624px;
+}
+
+.database_article_issue {
+	font-family: Tahoma, sans-serif;
+	font-style: oblique;
+	margin: 0px 23px 0px 15px;
+	color:rgb(255, 93, 93); /* Old Colors */
+/*	color:rgb(255, 52, 52); -- Navigation Colors*/
+	text-shadow: black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px, black 0px 0px 2px;
+	background-color: rgb(255, 182, 67); /* Navigation Colors */
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.database_article_issue_title {
+	font-family: Tahoma, sans-serif;
+/* Originally: font-size: 11pt; */
+	font-size: 13pt;
+	font-style: oblique;
+	color: rgb(0, 0, 0);
+	display: inline;
+  font-weight: bold;
+}
+
+.database_article_key_events{
+	margin: 0px 26px 0px 0px;
+	font-family: Tahoma, sans-serif;
+	font-size: 11pt;
+}

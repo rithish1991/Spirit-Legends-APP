@@ -5,11 +5,35 @@
 /*
 @media (max-width: 1000px) {
 		#center_of_site {
-		background-color: red;
+		min-width: 1000px;
+		width: 1000px;
+		margin-left: 0px !important;
+		margin-top: 0px !important;
+		margin-right: 0px !important;
+		padding-left: 0px !important ;
+		padding-right: 0px !important;
+		border: none !important;
+		left: -10px;
 	}
 }
 */
 
+
+/* Safari */
+/*
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ @media {
+*/    
+    /*
+      Define here the CSS styles applied only to Safari browsers
+      (any version and any device)
+     */
+/*    
+    .table_list {(;
+        background-color: red;
+    );}
+}}
+*/
 
 /* No Script Message */
 
@@ -101,18 +125,22 @@ body {
 }
 
 #custom_blog_div {
-	float: left;
-	display: inline-block;
-	height: auto;
+  float: left;
+	clear: both;
+	display: block;
+	height: 0px !important;
 	width: 680px;
+	position:relative;
+	top: 87;
 }
 
 #database_main_div {
 	float: left;
 	display: inline-block;
-	height: auto;
+  flex: 2;
 	width: 680px;
 	position: relative;
+	padding-bottom: 10px;
 }
 
 .blog_post_header {
@@ -150,8 +178,60 @@ body {
 	font-family: Tahoma, sans-serif;
 }
 
+.blog_post_image_text {
+/*	text-align: center; */
+	color: black;
+	font-family: Tahoma, sans-serif;
+	font-size: 10pt;
+	margin-top: -5px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.post_div {
+}
+
+/* Blog Page Numbers */
+
+#arrowLeft {
+	margin: 0px 10px 0px 0px
+}
+
+#jump_to_page_button {
+	margin-left:15px;
+	border: 1px solid rgb(0, 103, 169);
+  	border-radius: 5px;
+  	text-decoration: none !important;
+	background-color: transparent;
+  	padding: 2px 2px 0px 2px;
+  	font-size: 11px;
+}
+
+#jump_to_page_button:hover {
+	cursor: pointer;
+}
+
+#search_pages {
+	display: none;
+	clear: both;
+	position: absolute;
+	margin-left: 5px;
+}
+
+#search_pages_button_text {
+	width: 20px;
+}
+
 
 /* Headers and Underlines */
+
+@media(max-width: 1000px) {
+	#newest_release_button img {
+		left: -50px;
+		position: relative;
+	}
+}
 
 .title {
 	font-family: Tahoma, sans-serif;
@@ -202,14 +282,49 @@ body {
 	text-align: center;
 }
 
+#post_navigation {
+	float: left;
+	clear: both;
+	width: 653px;
+	display: block;
+	padding-top: 40px;
+	position: absolute;
+	bottom: 0;
+	padding-right:13px;
+	padding-left: 13px;
+}
+
+#post_navigation h3 {
+	font-family: Tahoma, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: rgb(0, 103, 169);
+	display: inline;
+}
+
+#post_navigation a {
+	text-decoration: underline;
+	color: rgb(0, 113, 163);
+}
+
+#post_navigation span {
+	color: rgb(0, 113, 163);
+}
+
 
 /* Articles */
 
 #content {
-	min-height: 100vh;
-	display: block;
+	display: inline-block;
 	position: relative;
-	clear: both;
+}
+
+.blog_and_side_menu_content {
+	display: flex !important;
+}
+
+.database_content {
+  display: flex !important;
 }
 
 #full_page_article {
@@ -275,6 +390,7 @@ body {
 	background-color: rgb(190, 218, 236);
 /*	height: 798px; */
 	width: 244px;
+	height: 100%;
 	border-width: 1px;
 	border-style: solid;
 	border-color: rgb(0, 103, 169);
@@ -320,13 +436,13 @@ body {
 	margin-top: 17px;
 }
 
-#shop_with_indyplanet {
-	margin-left: -6px;
+#series_on_tapas {
+	margin-left: -3px;
+	margin-bottom: 10px;
 }
 
-#support_on_patreon {
-	margin-left: -3px;
-	margin-top: 15px;
+#shop_with_indyplanet {
+	margin-left: -6px;
 }
 
 #listen_to_podcast {
@@ -334,14 +450,36 @@ body {
 	margin-top: 5px;
 }
 
+#support_on_patreon {
+	margin-left: -3px;
+	margin-top: 15px;
+}
+
 #search_news {
 	margin-top: -8px;
+}
+
+.latest_news_contents_title {
+	text-decoration: underline;
+  color: rgb(0, 113, 163);
+}
+
+#latest_news_container {
+	margin-left: -20px;
+  width: 247px;
+}
+
+#latest_news {
+	font-family: Tahoma, sans-serif;
+  font-size: 10pt;
+  color: rgb(0, 0, 0);
 }
 
 #real_world_information {
 	margin-left: -7px;
 	margin-top: 10px;
 	margin-bottom: -2px;
+	
 }
 
 /* Tables */
@@ -486,13 +624,13 @@ h2 {
 
 .footer_link {
 	text-decoration:underline;
-	color: rgb(255, 182, 67);
+	color: rgb(255, 182, 67) !important;
 }
 
 
 /* Comic List */
 
-#series_list {
+.series_list {
 	width: 620px;
 	height: auto;
 	background-color: rgb(190, 218, 236);
@@ -500,11 +638,12 @@ h2 {
 	border-style: solid;
 	border-color: rgb(0, 103, 169);
 	box-shadow: 5px 10px black;
-	bottom: 0px;
+	bottom: 0;
 	position: absolute;
 	margin-left: 15px;
+	margin-bottom: 10px;
 	padding-top: 9px;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -566,7 +705,15 @@ h2 {
 	text-decoration: underline;
 }
 
-
+.recentering_comic_list {
+	display: inline-block;
+	clear: both;
+	position: relative;
+	background-color: yellow;
+/*	159px - 15px (margin-left) = 144px */
+	margin-left: 144px;
+	margin-bottom: 4px;
+}
 
 
 

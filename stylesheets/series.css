@@ -287,10 +287,23 @@ Chad Thomas</center></td>
 }
 
 
+/* Spirit Legends Preview Pages */
 
 
-
-
+#series_main_comic_preview {
+	display: inline-block;
+/*	margin: 14px 0px 26px 60px; */
+	margin: 14px 0px 51px 60px;
+/*	background-color: red;*/
+	vertical-align: top;
+	float: left;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 17px;
+	padding-bottom: 2px;
+	height: auto;
+	width: 747px;
+}
 
 
 
