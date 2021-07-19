@@ -811,408 +811,20 @@ if (document.getElementById("custom_blog_div")) {
 					post_7_Blog.appendChild(post_7_Blog_Span_In_P);
 					post_7_div.appendChild(post_7_Blog);
 
-		// Blog Post 6
+		
 
-			var post_6_div = document.createElement("div");
+		
 
-			post_6_div.setAttribute("id", "post_6_div");
-			post_6_div.setAttribute("class", "post_div");
+		
 
-			custom_blog_div.appendChild(post_6_div);
-
-				// Header
-
-					var post_6_Header = document.createElement("h2");
-					var post_6_Header_Text = document.createTextNode("This is Blog Post 6!");
-
-					post_6_Header.setAttribute("class", "blog_post_header");
-
-					post_6_Header.appendChild(post_6_Header_Text);
-					post_6_div.appendChild(post_6_Header);
-
-				// Date
-
-					var post_6_Date = document.createElement("p");
-					var post_6_Date_Text = document.createTextNode("January 2, 2018 12:00 am");
-
-					post_6_Date.setAttribute("class", "blog_post_date");
-
-					post_6_Date.appendChild(post_6_Date_Text);
-					post_6_div.appendChild(post_6_Date);
-
-				// Blog
-
-					var post_6_Blog = document.createElement("p");
-					var post_6_Blog_Span_In_P = document.createElement("span");
-					var post_6_Blog_Text = document.createTextNode("Hi, this is the sixth blog post! Please look forward to the complete site in the future!");
-
-					post_6_Blog.setAttribute("class", "blog_post_text");
-					post_6_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P")
-
-					post_6_Blog_Span_In_P.appendChild(post_6_Blog_Text);
-					post_6_Blog.appendChild(post_6_Blog_Span_In_P);
-					post_6_div.appendChild(post_6_Blog);
-
-		// Blog Post 5
-
-			var post_5_div = document.createElement("div");
-
-			post_5_div.setAttribute("id", "post_5_div");
-			post_5_div.setAttribute("class", "post_div");
-
-			custom_blog_div.appendChild(post_5_div);
-
-				// Header
-
-					var post_5_Header = document.createElement("h2");
-					var post_5_Header_Text = document.createTextNode("This is Blog Post 5!");
-
-					post_5_Header.setAttribute("class", "blog_post_header");
-
-					post_5_Header.appendChild(post_5_Header_Text);
-					post_5_div.appendChild(post_5_Header);
-
-				// Date
-
-					var post_5_Date = document.createElement("p");
-					var post_5_Date_Text = document.createTextNode("January 2, 2018 12:00 am");
-
-					post_5_Date.setAttribute("class", "blog_post_date");
-
-					post_5_Date.appendChild(post_5_Date_Text);
-					post_5_div.appendChild(post_5_Date);
-
-				// Blog
-
-					var post_5_Blog = document.createElement("p");
-					var post_5_Blog_Span_In_P = document.createElement("span");
-					var post_5_Blog_Text = document.createTextNode("Hi, this is the fifth blog post! Please look forward to the complete site in the future!");
-
-					post_5_Blog.setAttribute("class", "blog_post_text");
-					post_5_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P")
-
-					post_5_Blog_Span_In_P.appendChild(post_5_Blog_Text);
-					post_5_Blog.appendChild(post_5_Blog_Span_In_P);
-					post_5_div.appendChild(post_5_Blog);
-
-		// Blog Post 4
-
-			var post_4_div = document.createElement("div");
-
-			post_4_div.setAttribute("id", "post_4_div");
-			post_4_div.setAttribute("class", "post_div");
-
-			custom_blog_div.appendChild(post_4_div);
-
-				// Header
-
-					var post_4_Header = document.createElement("h2");
-					var post_4_Header_Text = document.createTextNode("This is Blog Post 4!");
-
-					post_4_Header.setAttribute("class", "blog_post_header");
-
-					post_4_Header.appendChild(post_4_Header_Text);
-					post_4_div.appendChild(post_4_Header);
-
-				// Date
-
-					var post_4_Date = document.createElement("p");
-					var post_4_Date_Text = document.createTextNode("January 2, 2018 12:00 am");
-
-					post_4_Date.setAttribute("class", "blog_post_date");
-
-					post_4_Date.appendChild(post_4_Date_Text);
-					post_4_div.appendChild(post_4_Date);
-
-				// Blog
-
-					var post_4_Blog = document.createElement("p");
-					var post_4_Blog_Span_In_P = document.createElement("span");
-					var post_4_Blog_Text = document.createTextNode("Hi, this is the fourth blog post! Please look forward to the complete site in the future!");
-
-					post_4_Blog.setAttribute("class", "blog_post_text");
-					post_4_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P")
-
-					post_4_Blog_Span_In_P.appendChild(post_4_Blog_Text);
-					post_4_Blog.appendChild(post_4_Blog_Span_In_P);
-					post_4_div.appendChild(post_4_Blog);
-
-		// Blog Post 3
-
-			var post_3_div = document.createElement("div");
-
-			post_3_div.setAttribute("id", "post_3_div");
-			post_3_div.setAttribute("class", "post_div");
-
-			custom_blog_div.appendChild(post_3_div);
-
-				// Header
-
-					var post_3_Header = document.createElement("h2");
-					var post_3_Header_Text = document.createTextNode("This is the Third Blog Post!");
-
-					post_3_Header.setAttribute("class", "blog_post_header");
-
-					post_3_Header.appendChild(post_3_Header_Text);
-					post_3_div.appendChild(post_3_Header);
-
-				// Date
-
-					var post_3_Date = document.createElement("p");
-					var post_3_Date_Text = document.createTextNode("January 2, 2018 12:00 am");
-
-					post_3_Date.setAttribute("class", "blog_post_date");
-
-					post_3_Date.appendChild(post_3_Date_Text);
-					post_3_div.appendChild(post_3_Date);
-
-				// Blog
-
-					var post_3_Blog = document.createElement("p");
-					var post_3_Blog_Span_In_P = document.createElement("span");
-					var post_3_Blog_Text = document.createTextNode("In this blog post, I am testing to see if I can make images with text below them, just like in the database articles! On the left, you will find an example that I am working on trying to get to work.");
-					var post_3_Blog_Text_Break = document.createElement("br");
-					var post_3_Blog_Text_Break_2 = document.createElement("br");
-					var post_3_Blog_Text_2 = document.createTextNode("In this second paragraph, I am also testing to see if I can make images with text below them, just like in the database articles and the previous paragraph! On the right, you will find an example that I am working on trying to get to work.");
-
-					//Left Image
-
-					var post_3_Blog_Image_With_Text_Div_1 = document.createElement("div"); //Image container div
-					var post_3_Blog_Image_With_Text_1 = document.createElement("img"); //Image
-					var post_3_Blog_Image_Text_Container_1 = document.createElement("p"); //Paragraph tag to attach text node to
-					var post_3_Blog_Image_Text_1 = document.createTextNode("This is a left image."); //Image Text
-
-					post_3_Blog_Image_With_Text_Div_1.setAttribute("class", "Left_Image_With_Text");
-					post_3_Blog_Image_With_Text_1.setAttribute("width", "100px");
-					post_3_Blog_Image_Text_Container_1.setAttribute("class", "Blog_Image_Text");
-					post_3_Blog_Image_Text_Container_1.setAttribute("style", "width:90px");
-					post_3_Blog_Image_With_Text_1.setAttribute("src", "./series images/main series/spirit legends issue 5/Spirit Legends 5 - Cover.jpg");
-
-					//Right Image
-
-					var post_3_Blog_Image_With_Text_Div_2 = document.createElement("div"); //Image container div
-					var post_3_Blog_Image_With_Text_2 = document.createElement("img"); //Image
-					var post_3_Blog_Image_Text_Container_2 = document.createElement("p"); //Paragraph tag to attach text node to
-					var post_3_Blog_Image_Text_2 = document.createTextNode("This is a right image."); //Image Text
-
-					post_3_Blog_Image_With_Text_Div_2.setAttribute("class", "Right_Image_With_Text");
-					post_3_Blog_Image_With_Text_2.setAttribute("width", "100px");
-					post_3_Blog_Image_Text_Container_2.setAttribute("class", "Blog_Image_Text");
-					post_3_Blog_Image_Text_Container_2.setAttribute("style", "width:90px");
-					post_3_Blog_Image_With_Text_2.setAttribute("src", "./series images/main series/spirit legends issue 5/Spirit Legends 5 - Cover.jpg");
-
-
-					//Appending Left Image
-
-					post_3_Blog_Image_With_Text_Div_1.appendChild(post_3_Blog_Image_With_Text_1) //Append image to image container div
-					post_3_Blog_Image_Text_Container_1.appendChild(post_3_Blog_Image_Text_1) //Append text node to paragraph tag
-					post_3_Blog_Image_With_Text_Div_1.appendChild(post_3_Blog_Image_Text_Container_1) //Append paragraph tag to image container div
-					post_3_Blog.appendChild(post_3_Blog_Image_With_Text_Div_1) //Append image container div to blog post container
-
-					//Appending Right Image
-
-					post_3_Blog_Image_With_Text_Div_2.appendChild(post_3_Blog_Image_With_Text_2) //Append image to image container div
-					post_3_Blog_Image_Text_Container_2.appendChild(post_3_Blog_Image_Text_2) //Append text node to paragraph tag
-					post_3_Blog_Image_With_Text_Div_2.appendChild(post_3_Blog_Image_Text_Container_2) //Append paragraph tag to image container div
-					post_3_Blog.appendChild(post_3_Blog_Image_With_Text_Div_2) //Append image container div to blog post container
-
-					//Appending Text
-
-					post_3_Blog.setAttribute("class", "blog_post_text");
-					post_3_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P")
-
-					post_3_Blog_Span_In_P.appendChild(post_3_Blog_Text_2);
-					post_3_Blog_Span_In_P.appendChild(post_3_Blog_Text_Break);
-					post_3_Blog_Span_In_P.appendChild(post_3_Blog_Text_Break_2);
-					post_3_Blog_Span_In_P.appendChild(post_3_Blog_Text);
-					post_3_Blog.appendChild(post_3_Blog_Span_In_P);
-					post_3_div.appendChild(post_3_Blog);
+	
 */
-		// Blog Post 2
-
-			var post_2_div = document.createElement("div");
-
-			post_2_div.setAttribute("id", "post_2_div");
-			post_2_div.setAttribute("class", "post_div");
-
-			custom_blog_div.appendChild(post_2_div);
-
-				// Header
-
-					var post_2_Header = document.createElement("h2");
-					var post_2_Header_Text = document.createTextNode("Article Updates!");
-
-					post_2_Header.setAttribute("class", "blog_post_header");
-
-					post_2_Header.appendChild(post_2_Header_Text);
-					post_2_div.appendChild(post_2_Header);
-
-				// Date
-
-					var post_2_Date = document.createElement("p");
-					var post_2_Date_Text = document.createTextNode("February 11, 2021 01:53 pm");
-
-					post_2_Date.setAttribute("class", "blog_post_date");
-
-					post_2_Date.appendChild(post_2_Date_Text);
-					post_2_div.appendChild(post_2_Date);
-
-				// Blog
-
-					var post_2_Blog = document.createElement("p");
-					var post_2_Blog_Span_In_P = document.createElement("span");
-					var post_2_Blog_Text = document.createTextNode("Articles have been added for Cyborg X, Ghold, Nikhel, and Shinobi!"); //Blog text part 1
-/*					var post_2_Blog_Text_Link_1 = document.createElement("a"); //Link 1
-					var post_2_Blog_Text_Link_1_Text = document.createTextNode("Cyborg X"); //Link 1 Text
-
-					var post_2_Blog_Text_Break = document.createElement("br");
-					var post_2_Blog_Text_Break_2 = document.createElement("br");
-					var post_2_Blog_2 = document.createElement("p");
-					var post_2_Blog_Span_In_P_2 = document.createElement("span");
-					var post_2_Blog_Text_2 = document.createTextNode(", "); //Blog text part 2
-					var post_2_Blog_Text_Link_2 = document.createElement("a"); //Link 2
-					var post_2_Blog_Text_Link_2_Text = document.createTextNode("Ghold"); //Link 2 Text
-					var post_2_Blog_Text_3 = document.createTextNode(", "); //Blog text part 3
-					var post_2_Blog_Text_Link_3 = document.createElement("a"); //Link 3
-					var post_2_Blog_Text_Link_3_Text = document.createTextNode("Nikhel"); //Link 3 Text
-					var post_2_Blog_Text_4 = document.createTextNode(", and "); //Blog text part 4
-					var post_2_Blog_Text_Link_4 = document.createElement("a"); //Link 4
-					var post_2_Blog_Text_Link_4_Text = document.createTextNode("Shinobi"); //Link 4 Text
-					var post_2_Blog_Text_5 = document.createTextNode("!"); //Blog text part 5
-*/
-
-/*
-					//Left Image
-
-					var post_2_Blog_Image_Div_1 = document.createElement("div"); //Image container div
-					var post_2_Blog_Image_1 = document.createElement("img"); //Image
-
-//					var post_2_Blog_Image_1_Text = document.createTextNode("Cyborg X"); //Image text
-//					var post_2_Blog_Image_1_Text_Container = document.createElement("p"); //Image text container
-//					var post_2_Blog_Image_1_Text_Container_Span = document.createElement("span");
-
-
-					post_2_Blog_Image_Div_1.setAttribute("class", "Left_Image");
-					post_2_Blog_Image_1.setAttribute("width", "100px");
-					post_2_Blog_Image_1.setAttribute("src", "./database images/Cyborg X/Cyborg X Profile.jpg");
-
-					//Right Image
-
-					var post_2_Blog_Image_Div_2 = document.createElement("div"); //Image container div
-					var post_2_Blog_Image_2 = document.createElement("img"); //Image
-
-					post_2_Blog_Image_Div_2.setAttribute("class", "Right_Image");
-					post_2_Blog_Image_2.setAttribute("width", "100px");
-					post_2_Blog_Image_2.setAttribute("src", "./series images/main series/spirit legends issue 5/Spirit Legends 5 - Cover.jpg");
-
-
-					//Appending Left Image
-
-//					post_2_Blog_Image_1_Text_Container.appendChild(post_2_Blog_Image_Div_1); //Append image text container to image container div
-//					post_2_Blog_Image_1_Text.appendChild(post_2_Blog_Image_1_Text_Container_Span); //Append image text to span
-//					post_2_Blog_Image_1_Text_Container_Span.appendChild(post_2_Blog_Image_1_Text_Container); //Append image text container to image text container span
-
-					post_2_Blog_Image_Div_1.appendChild(post_2_Blog_Image_1); //Append image to image container div
-					post_2_Blog.appendChild(post_2_Blog_Image_Div_1); //Append image container div to blog post container
-
-					//Appending Right Image
-
-					post_2_Blog_Image_Div_2.appendChild(post_2_Blog_Image_2); //Append image to image container div
-					post_2_Blog.appendChild(post_2_Blog_Image_Div_2); //Append image container div to blog post container
-*/
-					//Appending Text
-
-					post_2_Blog.setAttribute("class", "blog_post_text");
-					post_2_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P");
-/*
-					post_2_Blog_Text_Link_1.setAttribute("href", "database-cyborg-x.html"); //Link 1 href
-					post_2_Blog_Text_Link_2.setAttribute("href", "database-ghold.html"); //Link 2 href
-					post_2_Blog_Text_Link_3.setAttribute("href", "database-nikhel.html"); //Link 3 href
-					post_2_Blog_Text_Link_4.setAttribute("href", "database-shinobi.html"); //Link 4 href
-*/
-//					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_2);
-//					post_2_Blog.appendChild(post_2_Blog_Span_In_P_2);
-//					post_2_div.appendChild(post_2_Blog_2);
-
-//					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Break);
-//					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Break_2);
-
-				//Blog text part 1
-					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text);
-					post_2_Blog.appendChild(post_2_Blog_Span_In_P);
-					post_2_div.appendChild(post_2_Blog);
-/*				//Link: Cyborg X
-					post_2_Blog_Text_Link_1.appendChild(post_2_Blog_Text_Link_1_Text);
-					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Link_1);
-				//Blog text part 2
-					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_2);
-					post_2_Blog.appendChild(post_2_Blog_Span_In_P);
-					post_2_div.appendChild(post_2_Blog);
-				//Link: Ghold
-					post_2_Blog_Text_Link_2.appendChild(post_2_Blog_Text_Link_2_Text);
-					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Link_2);
-				//Blog text part 3
-					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_3);
-					post_2_Blog.appendChild(post_2_Blog_Span_In_P);
-					post_2_div.appendChild(post_2_Blog);
-				//Link: Nikhel
-					post_2_Blog_Text_Link_3.appendChild(post_2_Blog_Text_Link_3_Text);
-					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Link_3);
-				//Blog text part 4
-					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_4);
-					post_2_Blog.appendChild(post_2_Blog_Span_In_P);
-					post_2_div.appendChild(post_2_Blog);
-				//Link: Shinobi
-					post_2_Blog_Text_Link_4.appendChild(post_2_Blog_Text_Link_4_Text);
-					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Link_4);
-				//Blog text part 5
-					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_5);
-					post_2_Blog.appendChild(post_2_Blog_Span_In_P);
-					post_2_div.appendChild(post_2_Blog);
-*/
-
-		// Blog Post 1
-
-			var post_1_div = document.createElement("div");
-
-			post_1_div.setAttribute("id", "post_1_div");
-			post_1_div.setAttribute("class", "post_div");
-
-			custom_blog_div.appendChild(post_1_div);
-
-				// Header
-
-					var post_1_Header = document.createElement("h2");
-					var post_1_Header_Text = document.createTextNode("Welcome, and Pardon the Construction!");
-
-					post_1_Header.setAttribute("class", "blog_post_header");
-
-					post_1_Header.appendChild(post_1_Header_Text);
-					post_1_div.appendChild(post_1_Header);
-
-				// Date
-
-					var post_1_Date = document.createElement("p");
-					var post_1_Date_Text = document.createTextNode("September 15, 2020 12:00 am");
-
-					post_1_Date.setAttribute("class", "blog_post_date");
-
-					post_1_Date.appendChild(post_1_Date_Text);
-					post_1_div.appendChild(post_1_Date);
-
-				// Blog
-
-					var post_1_Blog = document.createElement("p");
-					var post_1_Blog_Span_In_P = document.createElement("span");
-					var post_1_Blog_Text = document.createTextNode("Hi, and welcome to the official Spirit Legends website! The site is live in order to test out certain things, but as you can see, it is very much incomplete. Please look forward to the complete site in the future!");
-
-					post_1_Blog.setAttribute("class", "blog_post_text");;
-					post_1_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P");
-
-					post_1_Blog_Span_In_P.appendChild(post_1_Blog_Text);
-					post_1_Blog.appendChild(post_1_Blog_Span_In_P);
-					post_1_div.appendChild(post_1_Blog);
-
+		createBlogPostTwo();
+		 createBlogPostOne();
+		// createBlogPostThree();
+		// createBlogPostFour();
+		// createBlogPostFive();
+		// createBlogPostSix();
 
 		// Line Breaks Before Post Navigation
 
@@ -1229,8 +841,477 @@ if (document.getElementById("custom_blog_div")) {
 	}
 
 
-};
+	
 
+};
+function createBlogPostSix()
+{
+
+// Blog Post 6
+
+var post_6_div = document.createElement("div");
+
+post_6_div.setAttribute("id", "post_6_div");
+post_6_div.setAttribute("class", "post_div");
+
+custom_blog_div.appendChild(post_6_div);
+
+	// Header
+
+		var post_6_Header = document.createElement("h2");
+		var post_6_Header_Text = document.createTextNode("This is Blog Post 6!");
+
+		post_6_Header.setAttribute("class", "blog_post_header");
+
+		post_6_Header.appendChild(post_6_Header_Text);
+		post_6_div.appendChild(post_6_Header);
+
+	// Date
+
+		var post_6_Date = document.createElement("p");
+		var post_6_Date_Text = document.createTextNode("January 2, 2018 12:00 am");
+
+		post_6_Date.setAttribute("class", "blog_post_date");
+
+		post_6_Date.appendChild(post_6_Date_Text);
+		post_6_div.appendChild(post_6_Date);
+
+	// Blog
+
+		var post_6_Blog = document.createElement("p");
+		var post_6_Blog_Span_In_P = document.createElement("span");
+		var post_6_Blog_Text = document.createTextNode("Hi, this is the sixth blog post! Please look forward to the complete site in the future!");
+
+		post_6_Blog.setAttribute("class", "blog_post_text");
+		post_6_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P")
+
+		post_6_Blog_Span_In_P.appendChild(post_6_Blog_Text);
+		post_6_Blog.appendChild(post_6_Blog_Span_In_P);
+		post_6_div.appendChild(post_6_Blog);
+
+}
+function createBlogPostFour()
+{
+
+// Blog Post 4
+
+var post_4_div = document.createElement("div");
+
+post_4_div.setAttribute("id", "post_4_div");
+post_4_div.setAttribute("class", "post_div");
+
+custom_blog_div.appendChild(post_4_div);
+
+	// Header
+
+		var post_4_Header = document.createElement("h2");
+		var post_4_Header_Text = document.createTextNode("This is Blog Post 4!");
+
+		post_4_Header.setAttribute("class", "blog_post_header");
+
+		post_4_Header.appendChild(post_4_Header_Text);
+		post_4_div.appendChild(post_4_Header);
+
+	// Date
+
+		var post_4_Date = document.createElement("p");
+		var post_4_Date_Text = document.createTextNode("January 2, 2018 12:00 am");
+
+		post_4_Date.setAttribute("class", "blog_post_date");
+
+		post_4_Date.appendChild(post_4_Date_Text);
+		post_4_div.appendChild(post_4_Date);
+
+	// Blog
+
+		var post_4_Blog = document.createElement("p");
+		var post_4_Blog_Span_In_P = document.createElement("span");
+		var post_4_Blog_Text = document.createTextNode("Hi, this is the fourth blog post! Please look forward to the complete site in the future!");
+
+		post_4_Blog.setAttribute("class", "blog_post_text");
+		post_4_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P")
+
+		post_4_Blog_Span_In_P.appendChild(post_4_Blog_Text);
+		post_4_Blog.appendChild(post_4_Blog_Span_In_P);
+		post_4_div.appendChild(post_4_Blog);
+
+}
+
+function createBlogPostThree()
+{
+		// Blog Post 3
+
+		var post_3_div = document.createElement("div");
+
+		post_3_div.setAttribute("id", "post_3_div");
+		post_3_div.setAttribute("class", "post_div");
+
+		custom_blog_div.appendChild(post_3_div);
+
+			// Header
+
+				var post_3_Header = document.createElement("h2");
+				var post_3_Header_Text = document.createTextNode("This is the Third Blog Post!");
+
+				post_3_Header.setAttribute("class", "blog_post_header");
+
+				post_3_Header.appendChild(post_3_Header_Text);
+				post_3_div.appendChild(post_3_Header);
+
+			// Date
+
+				var post_3_Date = document.createElement("p");
+				var post_3_Date_Text = document.createTextNode("January 2, 2018 12:00 am");
+
+				post_3_Date.setAttribute("class", "blog_post_date");
+
+				post_3_Date.appendChild(post_3_Date_Text);
+				post_3_div.appendChild(post_3_Date);
+
+			// Blog
+
+				var post_3_Blog = document.createElement("p");
+				var post_3_Blog_Span_In_P = document.createElement("span");
+				var post_3_Blog_Text = document.createTextNode("In this blog post, I am testing to see if I can make images with text below them, just like in the database articles! On the left, you will find an example that I am working on trying to get to work.");
+				// var post_3_Blog_Text_Break = document.createElement("br");
+				// var post_3_Blog_Text_Break_2 = document.createElement("br");
+				var post_3_Blog_Text_2 = document.createTextNode("In this second paragraph, I am also testing to see if I can make images with text below them, just like in the database articles and the previous paragraph! On the right, you will find an example that I am working on trying to get to work.");
+
+				//Left Image
+
+				var post_3_Blog_Image_With_Text_Div_1 = document.createElement("div"); //Image container div
+				var post_3_Blog_Image_With_Text_1 = document.createElement("img"); //Image
+				var post_3_Blog_Image_Text_Container_1 = document.createElement("p"); //Paragraph tag to attach text node to
+				var post_3_Blog_Image_Text_1 = document.createTextNode("This is a left image."); //Image Text
+
+				post_3_Blog_Image_With_Text_Div_1.setAttribute("class", "Left_Image_With_Text");
+				post_3_Blog_Image_With_Text_1.setAttribute("width", "100px");
+				post_3_Blog_Image_Text_Container_1.setAttribute("class", "Blog_Image_Text");
+				post_3_Blog_Image_Text_Container_1.setAttribute("style", "width:90px");
+				post_3_Blog_Image_With_Text_1.setAttribute("src", "./series images/main series/spirit legends issue 5/Spirit Legends 5 - Cover.jpg");
+
+				//Right Image
+
+				var post_3_Blog_Image_With_Text_Div_2 = document.createElement("div"); //Image container div
+				var post_3_Blog_Image_With_Text_2 = document.createElement("img"); //Image
+				var post_3_Blog_Image_Text_Container_2 = document.createElement("p"); //Paragraph tag to attach text node to
+				var post_3_Blog_Image_Text_2 = document.createTextNode("This is a right image."); //Image Text
+
+				post_3_Blog_Image_With_Text_Div_2.setAttribute("class", "Right_Image_With_Text");
+				post_3_Blog_Image_With_Text_2.setAttribute("width", "100px");
+				post_3_Blog_Image_Text_Container_2.setAttribute("class", "Blog_Image_Text");
+				post_3_Blog_Image_Text_Container_2.setAttribute("style", "width:90px");
+				post_3_Blog_Image_With_Text_2.setAttribute("src", "./series images/main series/spirit legends issue 5/Spirit Legends 5 - Cover.jpg");
+
+
+				//Appending Left Image
+
+				post_3_Blog_Image_With_Text_Div_1.appendChild(post_3_Blog_Image_With_Text_1) //Append image to image container div
+				post_3_Blog_Image_Text_Container_1.appendChild(post_3_Blog_Image_Text_1) //Append text node to paragraph tag
+				post_3_Blog_Image_With_Text_Div_1.appendChild(post_3_Blog_Image_Text_Container_1) //Append paragraph tag to image container div
+				post_3_Blog.appendChild(post_3_Blog_Image_With_Text_Div_1) //Append image container div to blog post container
+
+				//Appending Right Image
+
+				post_3_Blog_Image_With_Text_Div_2.appendChild(post_3_Blog_Image_With_Text_2) //Append image to image container div
+				post_3_Blog_Image_Text_Container_2.appendChild(post_3_Blog_Image_Text_2) //Append text node to paragraph tag
+				post_3_Blog_Image_With_Text_Div_2.appendChild(post_3_Blog_Image_Text_Container_2) //Append paragraph tag to image container div
+				post_3_Blog.appendChild(post_3_Blog_Image_With_Text_Div_2) //Append image container div to blog post container
+
+				//Appending Text
+
+				post_3_Blog.setAttribute("class", "blog_post_text");
+				post_3_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P")
+
+				post_3_Blog_Span_In_P.appendChild(post_3_Blog_Text_2);
+				// post_3_Blog_Span_In_P.appendChild(post_3_Blog_Text_Break);
+				// post_3_Blog_Span_In_P.appendChild(post_3_Blog_Text_Break_2);
+				post_3_Blog_Span_In_P.appendChild(post_3_Blog_Text);
+				post_3_Blog.appendChild(post_3_Blog_Span_In_P);
+				post_3_div.appendChild(post_3_Blog);
+
+
+}
+function createBlogPostOne()
+{
+
+// Blog Post 1
+
+var post_1_div = document.createElement("div");
+
+post_1_div.setAttribute("id", "post_1_div");
+post_1_div.setAttribute("class", "post_div");
+
+custom_blog_div.appendChild(post_1_div);
+
+	// Header
+
+		var post_1_Header = document.createElement("h2");
+		var post_1_Header_Text = document.createTextNode("Welcome, and Pardon the Construction!");
+
+		post_1_Header.setAttribute("class", "blog_post_header");
+
+		post_1_Header.appendChild(post_1_Header_Text);
+		post_1_div.appendChild(post_1_Header);
+
+	// Date
+
+		var post_1_Date = document.createElement("p");
+		var post_1_Date_Text = document.createTextNode("September 15, 2020 12:00 am");
+
+		post_1_Date.setAttribute("class", "blog_post_date");
+
+		post_1_Date.appendChild(post_1_Date_Text);
+		post_1_div.appendChild(post_1_Date);
+
+	// Blog
+
+		var post_1_Blog = document.createElement("p");
+		var post_1_Blog_Span_In_P = document.createElement("span");
+		var post_1_Blog_Text = document.createTextNode("Hi, and welcome to the official Spirit Legends website! The site is live in order to test out certain things, but as you can see, it is very much incomplete. Please look forward to the complete site in the future!");
+
+		post_1_Blog.setAttribute("class", "blog_post_text");;
+		post_1_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P");
+
+		post_1_Blog_Span_In_P.appendChild(post_1_Blog_Text);
+		post_1_Blog.appendChild(post_1_Blog_Span_In_P);
+		post_1_div.appendChild(post_1_Blog);			
+
+}
+
+function createBlogPostTwo()
+	{
+
+				// Blog Post 2
+
+				var post_2_div = document.createElement("div");
+
+				post_2_div.setAttribute("id", "post_2_div");
+				post_2_div.setAttribute("class", "post_div");
+	
+				custom_blog_div.appendChild(post_2_div);
+	
+					// Header
+	
+						var post_2_Header = document.createElement("h2");
+						var post_2_Header_Text = document.createTextNode("Article Updates!");
+	
+						post_2_Header.setAttribute("class", "blog_post_header");
+	
+						post_2_Header.appendChild(post_2_Header_Text);
+						post_2_div.appendChild(post_2_Header);
+	
+					// Date
+	
+						var post_2_Date = document.createElement("p");
+						var post_2_Date_Text = document.createTextNode("February 11, 2021 01:53 pm");
+	
+						post_2_Date.setAttribute("class", "blog_post_date");
+	
+						post_2_Date.appendChild(post_2_Date_Text);
+						post_2_div.appendChild(post_2_Date);
+	
+					// Blog
+	
+						var post_2_Blog = document.createElement("p");
+						var post_2_Blog_Span_In_P = document.createElement("span");
+						var post_2_Blog_Text = document.createTextNode("Articles have been added for Cyborg X, Ghold, Nikhel, and Shinobi!"); //Blog text part 1
+
+
+						var post_2_Blog_Text_Link_1 = document.createElement("a"); //Link 1
+						var post_2_Blog_Text_Link_1_Text = document.createTextNode("Cyborg X"); //Link 1 Text
+						var post_2_Blog_2 = document.createElement("p");
+						var post_2_Blog_Span_In_P_2 = document.createElement("span");
+						var post_2_Blog_Text_2 = document.createTextNode(" , "); //Blog text part 2
+
+						var post_2_Blog_Text_Link_2 = document.createElement("a"); //Link 2
+						var post_2_Blog_Text_Link_2_Text = document.createTextNode("Ghold"); //Link 2 Text
+						var post_2_Blog_Text_3 = document.createTextNode(", "); //Blog text part 3
+						var post_2_Blog_Text_Link_3 = document.createElement("a"); //Link 3
+						var post_2_Blog_Text_Link_3_Text = document.createTextNode("Nikhel"); //Link 3 Text
+
+						var post_2_Blog_Text_4 = document.createTextNode(", and "); //Blog text part 4
+
+
+						var post_2_Blog_Text_Link_4 = document.createElement("a"); //Link 4
+
+						var post_2_Blog_Text_Link_4_Text = document.createTextNode("Shinobi"); //Link 4 Text
+
+	/*					
+	
+						var post_2_Blog_Text_Break = document.createElement("br");
+						var post_2_Blog_Text_Break_2 = document.createElement("br");
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						var post_2_Blog_Text_5 = document.createTextNode("!"); //Blog text part 5
+	*/
+	
+	/*
+						//Left Image
+	
+						var post_2_Blog_Image_Div_1 = document.createElement("div"); //Image container div
+						var post_2_Blog_Image_1 = document.createElement("img"); //Image
+	
+	//					var post_2_Blog_Image_1_Text = document.createTextNode("Cyborg X"); //Image text
+	//					var post_2_Blog_Image_1_Text_Container = document.createElement("p"); //Image text container
+	//					var post_2_Blog_Image_1_Text_Container_Span = document.createElement("span");
+	
+	
+						post_2_Blog_Image_Div_1.setAttribute("class", "Left_Image");
+						post_2_Blog_Image_1.setAttribute("width", "100px");
+						post_2_Blog_Image_1.setAttribute("src", "./database images/Cyborg X/Cyborg X Profile.jpg");
+	
+						//Right Image
+	
+						var post_2_Blog_Image_Div_2 = document.createElement("div"); //Image container div
+						var post_2_Blog_Image_2 = document.createElement("img"); //Image
+	
+						post_2_Blog_Image_Div_2.setAttribute("class", "Right_Image");
+						post_2_Blog_Image_2.setAttribute("width", "100px");
+						post_2_Blog_Image_2.setAttribute("src", "./series images/main series/spirit legends issue 5/Spirit Legends 5 - Cover.jpg");
+	
+	
+						//Appending Left Image
+	
+	//					post_2_Blog_Image_1_Text_Container.appendChild(post_2_Blog_Image_Div_1); //Append image text container to image container div
+	//					post_2_Blog_Image_1_Text.appendChild(post_2_Blog_Image_1_Text_Container_Span); //Append image text to span
+	//					post_2_Blog_Image_1_Text_Container_Span.appendChild(post_2_Blog_Image_1_Text_Container); //Append image text container to image text container span
+	
+						post_2_Blog_Image_Div_1.appendChild(post_2_Blog_Image_1); //Append image to image container div
+						post_2_Blog.appendChild(post_2_Blog_Image_Div_1); //Append image container div to blog post container
+	
+						//Appending Right Image
+	
+						post_2_Blog_Image_Div_2.appendChild(post_2_Blog_Image_2); //Append image to image container div
+						post_2_Blog.appendChild(post_2_Blog_Image_Div_2); //Append image container div to blog post container
+	*/
+						//Appending Text
+	
+						post_2_Blog.setAttribute("class", "blog_post_text");
+						post_2_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P");
+						post_2_Blog_Text_Link_1.setAttribute("href", "database-cyborg-x.html"); //Link 1 href
+						post_2_Blog_Text_Link_2.setAttribute("href", "database-ghold.html"); //Link 2 href
+						post_2_Blog_Text_Link_3.setAttribute("href", "database-nikhel.html"); //Link 3 href
+
+						post_2_Blog_Text_Link_4.setAttribute("href", "database-shinobi.html"); //Link 4 href
+	/*
+						
+						
+						
+						
+	*/
+						post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_2);
+						post_2_Blog.appendChild(post_2_Blog_Span_In_P_2);
+						post_2_div.appendChild(post_2_Blog_2);
+	
+	//					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Break);
+	//					post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Break_2);
+	
+					//Blog text part 1
+						post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text);
+						post_2_Blog.appendChild(post_2_Blog_Span_In_P);
+						post_2_div.appendChild(post_2_Blog);
+						//Link: Cyborg X
+						post_2_Blog_Text_Link_1.appendChild(post_2_Blog_Text_Link_1_Text);
+						post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Link_1);
+						post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_2);
+
+
+						post_2_Blog_Text_Link_2.appendChild(post_2_Blog_Text_Link_2_Text);
+						post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Link_2);
+						post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_3);
+
+
+						post_2_Blog_Text_Link_3.appendChild(post_2_Blog_Text_Link_3_Text);
+						post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Link_3);
+
+						post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_4);
+
+						post_2_Blog_Text_Link_4.appendChild(post_2_Blog_Text_Link_4_Text);
+	/*				
+						
+					//Blog text part 2
+						
+						post_2_Blog.appendChild(post_2_Blog_Span_In_P);
+						post_2_div.appendChild(post_2_Blog);
+					//Link: Ghold
+					
+					//Blog text part 3
+						
+						post_2_Blog.appendChild(post_2_Blog_Span_In_P);
+						post_2_div.appendChild(post_2_Blog);
+					//Link: Nikhel
+						
+					//Blog text part 4
+					
+						post_2_Blog.appendChild(post_2_Blog_Span_In_P);
+						post_2_div.appendChild(post_2_Blog);
+					//Link: Shinobi
+						
+						post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_Link_4);
+					//Blog text part 5
+						post_2_Blog_Span_In_P.appendChild(post_2_Blog_Text_5);
+						post_2_Blog.appendChild(post_2_Blog_Span_In_P);
+						post_2_div.appendChild(post_2_Blog);
+	*/
+	
+
+	}
+	function createBlogPostFive()
+	{
+
+		// Blog Post 5
+
+		var post_5_div = document.createElement("div");
+
+		post_5_div.setAttribute("id", "post_5_div");
+		post_5_div.setAttribute("class", "post_div");
+
+		custom_blog_div.appendChild(post_5_div);
+
+			// Header
+
+				var post_5_Header = document.createElement("h2");
+				var post_5_Header_Text = document.createTextNode("This is Blog Post 5!");
+
+				post_5_Header.setAttribute("class", "blog_post_header");
+
+				post_5_Header.appendChild(post_5_Header_Text);
+				post_5_div.appendChild(post_5_Header);
+
+			// Date
+
+				var post_5_Date = document.createElement("p");
+				var post_5_Date_Text = document.createTextNode("January 2, 2018 12:00 am");
+
+				post_5_Date.setAttribute("class", "blog_post_date");
+
+				post_5_Date.appendChild(post_5_Date_Text);
+				post_5_div.appendChild(post_5_Date);
+
+			// Blog
+
+				var post_5_Blog = document.createElement("p");
+				var post_5_Blog_Span_In_P = document.createElement("span");
+				var post_5_Blog_Text = document.createTextNode("Hi, this is the fifth blog post! Please look forward to the complete site in the future!");
+
+				post_5_Blog.setAttribute("class", "blog_post_text");
+				post_5_Blog_Span_In_P.setAttribute("class", "Blog_Text_Span_In_P")
+
+				post_5_Blog_Span_In_P.appendChild(post_5_Blog_Text);
+				post_5_Blog.appendChild(post_5_Blog_Span_In_P);
+				post_5_div.appendChild(post_5_Blog);
+
+	}
 
 
 

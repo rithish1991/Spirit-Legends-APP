@@ -320,7 +320,7 @@ body {
 }
 
 .blog_and_side_menu_content {
-	display: flex !important;
+	display: flex;
 }
 
 .database_content {
@@ -714,6 +714,10 @@ h2 {
 	margin-left: 144px;
 	margin-bottom: 4px;
 }
+
+.highlight {
+	background-color:yellow;
+  }
 
 
 

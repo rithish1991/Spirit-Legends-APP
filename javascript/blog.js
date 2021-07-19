@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", function() {
 // this function runs when the DOM is ready, i.e. when the document has been parsed
 
     // Blog
-
+	var all_blogs,copyOfAllBlogs;
 function onPageLoad(){
 
-//    createBlogs126to150();
-//    createBlogs101to125();
-//    createBlogs76to100();
-//    createBlogs51to75();
-//    createBlogs26to50();
+//     createBlogs126to150();
+//     createBlogs101to125();
+//     createBlogs76to100();
+//     createBlogs51to75();
+//   createBlogs26to50();
     createBlogs1to25();
 
 
@@ -35,8 +35,11 @@ function onPageLoad(){
 		var article = document.getElementById("custom_blog_div").querySelectorAll(".post_div");
 		var contents = document.getElementById("latest_news");
 		var last_notes_message = document.getElementById("last_notes_message").style.display = "none";
-
-		var all_blogs = document.getElementById("custom_blog_div").querySelectorAll(".post_div");
+		var copy = document.getElementById("custom_blog_div").querySelectorAll(".post_div");
+		copyOfAllBlogs = jQuery.extend(true, {}, copy);
+		
+		 all_blogs = document.getElementById("custom_blog_div").querySelectorAll(".post_div");
+		
 
         var latest_news_fixed = 25; ///////////////////////////////////////////////////////////////////////////////////// how many latest news you will see on the sidebar
 
@@ -73,11 +76,12 @@ function onPageLoad(){
 					$('#returnLink').on('click', (eve) => {
 //						console.log('event happened',eve);
 						document.getElementById('last_notes_message').style.display="none";
+						
 						const x = document.getElementById('custom_blog_div')
 						//x.style.display = "none";
 						x.style['margin-top'] = "0px";
 						document.getElementById('latest_news').style.display="block";
-						searchText();
+						//searchText();
 						createPagination();
 						$('#post_navigation').show();
 						/*$('.post_div').each( (ind, el) => {
@@ -106,6 +110,35 @@ function onPageLoad(){
 }
 }
 
+$('#returnLink').on('click', (eve) => {
+	document.getElementById('last_notes_message').style.display="none";
+						
+						const x = document.getElementById('custom_blog_div')
+						//x.style.display = "none";
+						x.style['margin-top'] = "0px";
+						document.getElementById('latest_news').style.display="block";
+						//searchText();
+						createPagination();
+						$('#post_navigation').show();
+						
+						$(all_blogs).find("mark").contents().unwrap();
+						$(".post_div").remove();
+						for(var i=0;i<all_blogs.length;i++)
+						{
+
+
+							
+							
+								custom_blog_div.appendChild(all_blogs[i])
+
+							
+		
+		
+		
+						}
+
+});
+
 function showStories() {
 	$('.post_div').each( (ind, el) => {
 		
@@ -133,8 +166,17 @@ input.addEventListener("keyup", function(event) {
 
 function searchText(isButtonPush = false){
 	document.getElementById("post_navigation").style.display = "inline";
-	document.getElementById("last_notes_message").style.display = "none";
+	document.getElementById('last_notes_message').style.display="inline";
+	//all_blogs = jQuery.extend(true, {}, copyOfAllBlogs);
 
+	//Remove higlighted elements
+	$(all_blogs).find("mark").contents().unwrap();
+	
+	//all_blogs = $.extend({}, copyOfAllBlogs);
+	//var custom_blog = document.getElementById("custom_blog_div");
+	//alert($("#custom_blog_div > div").length);
+
+	//restoreElements();
 	//console.log('inside search text', event);
 	//var last_notes_message = document.getElementById("last_notes_message").style.display = "none";
     //Clear previous search
@@ -142,18 +184,103 @@ function searchText(isButtonPush = false){
 	//$('#last_notes_message').hide();
 	//var last_notes_message = event.target.value;
 
-	this.highlightText("Blog_Text_Span_In_P", "background-color: #BEDAEC");
+	// this.highlightText("Blog_Text_Span_In_P", "background-color: #BEDAEC");
 
-	this.highlightText("Blog_Image_Text", "background-color: #FFFFFF");
+	// this.highlightText("Blog_Image_Text", "background-color: #FFFFFF");
 
-	this.highlightText("blog_post_header", 'color: #BEDAEC; font-style: oblique !important;');
+	// this.highlightText("blog_post_header", 'color: #BEDAEC; font-style: oblique !important;');
 
-	this.highlightText("blog_post_date", "background-color: #BEDAEC");;
+	// this.highlightText("blog_post_date", "background-color: #BEDAEC");;
 
+	
+	
+	
+	// for(var i =0;i<2;i++)
+	// {
+
+	// searchAndHighlight("blog_post_header",i);
+	// searchAndHighlight("blog_post_date",i);
+	// searchAndHighlight("Blog_Text_Span_In_P",i);
+
+	// }
+	//  removeBlogPosts();
+
+	
+
+	//Remove Entire Blog elements
+	$(".post_div").remove();
+	for(var i=0;i<all_blogs.length;i++)
+	{
+
+
+		searchAndHighlight(all_blogs[i]);
+		//If blog has mark or higlighted elements 
+		if($(all_blogs[i].innerHTML).find("mark").length>=1)
+		{
+			custom_blog_div.appendChild(all_blogs[i])
+
+		}
+		
+		
+		
+	}
+	
+	
+
+	
+	
 	this.createPagination();
 
 	document.getElementById("search_news_button_text").value = "";
 }
+
+
+function searchAndHighlight(element)
+{
+
+	console.log(element);
+	if(element.children.length==0)
+	{
+	const searchText = document.getElementById("search_news_button_text").value.trim();
+	const regex = new RegExp(searchText, 'gi');
+	let text = element.innerHTML;
+	text = text.replace(/(<mark class="highlight">|<\/mark>)/gim, '');
+	const newText = text.replace(regex, '<mark class="highlight">$&</mark>');
+	element.innerHTML = newText;
+	}
+	else if (element.children.length>=1)
+	{
+		
+		for(var i =0;i<element.children.length;i++)
+		{
+
+			searchAndHighlight(element.children[i]);
+		}
+	}
+
+
+
+}
+
+// function searchAndHighlight(className,idx)
+// {
+
+
+// 	const $box = document.getElementsByClassName(className)[idx];
+// 	const searchText = document.getElementById("search_news_button_text").value.trim();
+// 	const regex = new RegExp(searchText, 'gi');
+// 	let text = $box.innerHTML;
+// 	text = text.replace(/(<mark class="highlight">|<\/mark>)/gim, '');
+// 	const newText = text.replace(regex, '<mark class="highlight">$&</mark>');
+// 	$box.innerHTML = newText;
+
+
+// }
+
+
+
+
+
 
 function removeAllHighLights(){
 
