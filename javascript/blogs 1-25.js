@@ -286,6 +286,7 @@ if (document.getElementById("custom_blog_div")) {
 
 				// Date
 
+
 					var post_19_Date = document.createElement("p");
 					var post_19_Date_Text = document.createTextNode("January 2, 2018 12:00 am");
 
